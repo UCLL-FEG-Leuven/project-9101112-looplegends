@@ -4,40 +4,97 @@ nav ul {
     justify-content: space-evenly;
 }
 
-.Checkout {
-    background-color: lightgrey;
-    padding: 3rem;
-}
 
-
-
-.buttons  {
+.buttons {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: center;
 }
+
+
+
+button {
+    width: 210px;
+    /* Pas de breedte aan naar wens */
+    height: 130px;
+    /* Pas de hoogte aan naar wens */
+    margin: 5px;
+    /* Optioneel: voeg marge toe tussen de knoppen */
+    border-radius: 0.2rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
 
 .Drinks {
     background-color: lightblue;
-    font-size: 3rem;
-    padding: 3rem;
 }
 
 .Foods {
     background-color: lightcoral;
-    font-size: 3rem;
-    padding: 3rem;
 }
 
 .Desserts {
     background-color: lightgreen;
-    font-size: 3rem;
-    padding: 3rem;
 }
 
 .Snacks {
     background-color: lightyellow;
-    font-size: 3rem;
-    padding: 3rem;
+}
+
+.total-cost {
+    position: absolute;
+    bottom: -2px;
+    right: 25.6rem;
+    padding: 20px;
+    background-color: lightslategray;
+    border: 1px solid black;
+    border-top-left-radius: 1rem;
+}
+
+section {
+    border: 2px solid black;
+}
+
+.Eindafrekening {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    border-top-right-radius: 1rem;
+    height: 37.2vh;
+}
+
+.Onderste {
+    display: grid;
+    grid-template-columns: 83.4% 16.6%;
+}
+
+
+.ALL {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.Zijbalk {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+.ButtonZijBalk {
+    width: 11vw;
+    font-size: 1.5rem;
+    background-color: lightgreen;
 }
