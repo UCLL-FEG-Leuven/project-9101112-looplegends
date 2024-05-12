@@ -2,18 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 100px;
 }
 .Head img {
   width: 100px;
   height: auto;
 }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-}
+
 
 .buttons {
   display: flex;
@@ -55,13 +51,11 @@ p {
 }
 
 .total-cost {
-  position: absolute;
-  bottom: -2px;
-  right: 25.6rem;
+  display: flex;
   padding: 20px;
   background-color: lightslategray;
-  border: 1px solid black;
-  border-top-left-radius: 1rem;
+  justify-content: end; 
+  padding-right: 2rem;
 }
 
 section {
@@ -70,7 +64,7 @@ section {
 
 .Eindafrekening {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   background-color: lightgrey;
   border: 1px solid grey;
