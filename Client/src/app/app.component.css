@@ -1,100 +1,103 @@
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+.Head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.Head img {
+  width: 100px;
+  height: auto;
 }
 
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .buttons {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-
-
 button {
-    width: 210px;
-    /* Pas de breedte aan naar wens */
-    height: 130px;
-    /* Pas de hoogte aan naar wens */
-    margin: 5px;
-    /* Optioneel: voeg marge toe tussen de knoppen */
-    border-radius: 0.2rem;
+  width: 210px;
+  /* Pas de breedte aan naar wens */
+  height: 130px;
+  /* Pas de hoogte aan naar wens */
+  margin: 5px;
+  /* Optioneel: voeg marge toe tussen de knoppen */
+  border-radius: 0.2rem;
 }
 
 h1 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 p {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
-
 .Drinks {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .Foods {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 .Desserts {
-    background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 .Snacks {
-    background-color: lightyellow;
+  background-color: lightyellow;
 }
 
 .total-cost {
-    position: absolute;
-    bottom: -2px;
-    right: 25.6rem;
-    padding: 20px;
-    background-color: lightslategray;
-    border: 1px solid black;
-    border-top-left-radius: 1rem;
+  position: absolute;
+  bottom: -2px;
+  right: 25.6rem;
+  padding: 20px;
+  background-color: lightslategray;
+  border: 1px solid black;
+  border-top-left-radius: 1rem;
 }
 
 section {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 .Eindafrekening {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: lightgrey;
-    border: 1px solid grey;
-    border-top-right-radius: 1rem;
-    height: 37.2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  border-top-right-radius: 1rem;
+  height: 37.2vh;
 }
 
 .Onderste {
-    display: grid;
-    grid-template-columns: 83.4% 16.6%;
+  display: grid;
+  grid-template-columns: 83.4% 16.6%;
 }
-
 
 .ALL {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-
-
 
 .Zijbalk {
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-
 .ButtonZijBalk {
-    width: 11vw;
-    font-size: 1.5rem;
-    background-color: lightgreen;
+  width: 11vw;
+  font-size: 1.5rem;
+  background-color: lightgreen;
 }
