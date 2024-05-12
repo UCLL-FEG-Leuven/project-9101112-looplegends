@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { KlokComponent } from './klok/klok.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  clickedButtons: { [key: string]: { count: number, price: number } } = {};
+  clickedButtons: { [key: string]: { count: number; price: number } } = {};
   clickedButtonTitle: string = '';
   totalCost: number = 0;
 
@@ -32,10 +33,12 @@ export class AppComponent {
   }
 
   private updateClickedButtonTitle() {
-    this.clickedButtonTitle = Object.keys(this.clickedButtons).map(key => {
-      const item = this.clickedButtons[key];
-      const count = item.count > 1 ? `${item.count}X` : '';
-      return `${count} ${key} €${item.price}`;
-    }).join('<br>');
+    this.clickedButtonTitle = Object.keys(this.clickedButtons)
+      .map((key) => {
+        const item = this.clickedButtons[key];
+        const count = item.count > 1 ? `${item.count}X` : '';
+        return `${count} ${key} €${item.price}`;
+      })
+      .join('<br>');
   }
 }
