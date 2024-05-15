@@ -2,13 +2,16 @@
   <nav>
     <div class="Head">
       <p>Kassa App</p>
-      <p>klokje</p>
+      <app-klok></app-klok>
       <img src="assets/PicKassa.png" alt="PicKassa" />
     </div>
   </nav>
 </header>
 
 <main class="main">
+
+
+
   <div class="button-container">
     <app-button text="Button 1" [price]="10" category="Category1" (click)="showTitle('Category1', 10)"></app-button>
     <app-button text="Button 2" [price]="20" category="Category2" (click)="showTitle('Category2', 20)"></app-button>
@@ -36,7 +39,7 @@
   <div class="Categorys">
     <button class="CategoryButton">Drinken</button>
     <button class="CategoryButton">Hoofdmaaltijden</button>
-    <button class="CategoryButton">Tussendoortje</button>
+    <button class="CategoryButton">Tussendoortjes</button>
     <button class="CategoryButton">Deserten</button>
   </div>
 
@@ -47,6 +50,14 @@
     <button class="ButtonZijBalk">+ / -</button>
     <button class="ButtonZijBalk">Betaal</button>
   </div>
+  <div class="Eindafrekening">
+    <div class="Onderste">
+      <div class="total-cost">
+        <p>Totale kosten: €{{ totalCost }}</p>
+      </div>
 
+      <div class="Checkout" [innerHTML]="clickedButtonTitle"></div>
+    </div>
+  </div>
   <router-outlet />
 </main>

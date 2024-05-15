@@ -2,14 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 75px;
 }
 
-
-
 .Head img {
-  width: 50px;
+  width: 60px;
   height: auto;
+  margin-right: 1rem;
+}
+
+.Head p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
 }
 
 
@@ -23,13 +27,7 @@
 
 
 
-h1 {
-  font-size: 1.6rem;
-}
 
-p {
-  font-size: 1.3rem;
-}
 
 .Drinks {
   background-color: #add8e6;
@@ -75,10 +73,7 @@ section {
   height: 38.8vh;
 }
 
-.Onderste {
-  display: grid;
-  grid-template-columns: 83.4% 16.6%;
-}
+
 
 .ALL {
   display: flex;
@@ -88,13 +83,14 @@ section {
 .Zijbalk {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid black;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  justify-content: center;
+  align-items: center;
 }
 
 .ButtonZijBalk {
-  width: 11vw;
+  width: 12vw;
+  height: 17vh;
+  margin: 0.2rem;
   font-size: 1.5rem;
   background-color: lightgreen;
 }

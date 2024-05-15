@@ -1,19 +1,29 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { KlokComponent } from './klok/klok.component';
 import { ButtonComponent } from './button/button.component';
+import { DrinkenComponent } from './drinken/drinken.component';
+import { HoofdgerechtenComponent } from './hoofdgerechten/hoofdgerechten.component';
+import { TussendoortjesComponent } from './tussendoortjes/tussendoortjes.component';
+import { DessertenComponent } from './desserten/desserten.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ButtonComponent],
+  imports: [RouterOutlet, KlokComponent, ButtonComponent, DrinkenComponent, HoofdgerechtenComponent, TussendoortjesComponent, DessertenComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+
+
 })
 export class AppComponent {
   clickedButtons: { [key: string]: { count: number; price: number } } = {};
   clickedButtonTitle: string = '';
   totalCost: number = 0;
+
+
 
   showTitle(category: string, price: number) {
     if (!this.clickedButtons[category]) {
