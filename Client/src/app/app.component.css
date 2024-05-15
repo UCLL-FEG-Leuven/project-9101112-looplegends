@@ -5,27 +5,23 @@
   height: 50px;
 }
 
+
+
 .Head img {
   width: 50px;
   height: auto;
 }
 
 
-
-.buttons {
-  display: flex;
-  flex-direction: column;
+.main {
+  display: grid;
+  grid-template-columns: 75% 1fr 1fr;
 }
 
-button {
-  width: 210px;
-  /* Pas de breedte aan naar wens */
-  height: 130px;
-  /* Pas de hoogte aan naar wens */
-  margin: 5px;
-  /* Optioneel: voeg marge toe tussen de knoppen */
-  border-radius: 0.2rem;
-}
+
+
+
+
 
 h1 {
   font-size: 1.6rem;
@@ -36,7 +32,13 @@ p {
 }
 
 .Drinks {
-  background-color: lightblue;
+  background-color: #add8e6;
+}
+
+.Drinks:hover {
+  background-color: #add8e672;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .Foods {
@@ -44,7 +46,7 @@ p {
 }
 
 .Desserts {
-  background-color: lightgreen;
+  background-color: rgb(255, 255, 51);
 }
 
 .Snacks {

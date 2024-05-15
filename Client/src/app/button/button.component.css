@@ -1,0 +1,28 @@
+button {
+    font-size: 2rem;
+    background-color: lightyellow;
+    width: 210px;
+    height: 130px;
+    margin: 5px;
+    border-radius: 0.2rem;
+}
+
+button span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text {
+    color: blue;
+    font-size: 1.7rem;
+}
+
+.price {
+    color: brown;
+    font-size: 1.4rem;
+}
+
+.category {
+    color: red;
+}
