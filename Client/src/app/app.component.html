@@ -52,26 +52,27 @@
   <div class="Onderbalk">
     <div class="Eindafrekening">
       <div class="Onderste">
-        <div class="total-cost">
-          <p>Totale kosten: €{{ totalCost }}</p>
-        </div>
+
 
         <div class="Checkout" [innerHTML]="clickedButtonTitle"></div>
+
       </div>
     </div>
 
     <div class="Categorys">
       <button class="CategoryButton">Deserten</button>
-      <div class="plusandmin">
-        <button class="plus">+</button>
-        <button class="min">-</button>
-        <button class="max">x</button>
+      <div class="total-cost">
+        <p>Totale kosten: </p>
+        <p>€{{ totalCost }}</p>
       </div>
     </div>
 
     <div class="Zijbalk">
-      <button class="ButtonZijBalk">+ / -</button>
-      <button class="ButtonZijBalk">Betaal</button>
+      <div class="plusandmin">
+        <button class="plus">+</button>
+        <button class="min">-</button>
+        <button class="delete">x</button>
+      </div> <button class="ButtonZijBalk">Betaal</button>
     </div>
   </div>
   <router-outlet />
