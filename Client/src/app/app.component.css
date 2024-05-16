@@ -17,42 +17,14 @@
 }
 
 
-.main {
-  display: grid;
-  grid-template-columns: 75% 1fr 1fr;
-}
 
 
 
 
-
-
-
-
-.Drinks {
-  background-color: #add8e6;
-}
-
-.Drinks:hover {
-  background-color: #add8e672;
-  border: 1px solid black;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-
-.Foods {
-  background-color: lightcoral;
-}
-
-.Desserts {
-  background-color: rgb(255, 255, 51);
-}
-
-.Snacks {
-  background-color: lightyellow;
-}
 
 .total-cost {
   display: flex;
+  margin-top: 11rem;
   padding: 20px;
   background-color: lightslategray;
   justify-content: end;
@@ -70,15 +42,11 @@ section {
   background-color: lightgrey;
   border: 1px solid grey;
   border-top-right-radius: 1rem;
-  height: 38.8vh;
+  height: 33vh;
+  width: 73.5vw;
+  padding-bottom: 1rem;
 }
 
-
-
-.ALL {
-  display: flex;
-  flex-direction: row;
-}
 
 .Zijbalk {
   display: flex;
@@ -93,4 +61,15 @@ section {
   margin: 0.2rem;
   font-size: 1.5rem;
   background-color: lightgreen;
+}
+
+.Bovenstuk {
+  display: grid;
+  grid-template-columns: 75% 1fr 1fr;
+}
+
+.Onderbalk {
+  display: grid;
+  grid-template-columns: 75% 1fr 1fr;
+
 }
