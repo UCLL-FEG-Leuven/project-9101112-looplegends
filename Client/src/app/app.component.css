@@ -20,12 +20,6 @@
   height: 91vh;
 }
 
-
-
-
-
-
-
 .total-cost {
   display: flex;
   flex-direction: column;
@@ -53,8 +47,8 @@ section {
   height: 35.8vh;
   width: 73.5vw;
   padding-bottom: 1rem;
+  overflow-x: scroll;
 }
-
 
 .Zijbalk {
   display: flex;
@@ -78,7 +72,6 @@ section {
   align-items: center;
 }
 
-
 .CategoryButton {
   width: 12vw;
   height: 17vh;
@@ -86,7 +79,6 @@ section {
   font-size: 1.5rem;
   background-color: lightgreen;
 }
-
 
 .plus {
   width: 5.7vw;
@@ -111,11 +103,6 @@ section {
   font-size: 1.5rem;
   background-color: lightblue;
 }
-
-
-
-
-
 
 .Bovenstuk {
   display: grid;
