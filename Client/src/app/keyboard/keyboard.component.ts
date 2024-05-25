@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-keyboard',
   standalone: true,
-  imports: [],
+  //imports: [],
   templateUrl: './keyboard.component.html',
-  styleUrl: './keyboard.component.css'
+  styleUrl: './keyboard.component.css',
 })
 export class KeyboardComponent {
-
+  @Input() keyLetter: string = 'Default Letter';
+  @Input() keyNumber: number = 0;
 }
