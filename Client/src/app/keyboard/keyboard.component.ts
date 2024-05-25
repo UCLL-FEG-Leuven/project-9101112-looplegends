@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-keyboard',
   standalone: true,
-  //imports: [],
+  imports: [],
   templateUrl: './keyboard.component.html',
   styleUrl: './keyboard.component.css',
 })
