@@ -6,11 +6,12 @@ import { ButtonComponent } from '../button/button.component';
 import { HoofdgerechtenComponent } from '../hoofdgerechten/hoofdgerechten.component';
 import { TussendoortjesComponent } from '../tussendoortjes/tussendoortjes.component';
 import { DessertenComponent } from '../desserten/desserten.component';
+import { CheckoutComponent } from '../checkout/checkout.component';
 
 @Component({
   selector: 'app-drinken',
   standalone: true,
-  imports: [KlokComponent, ButtonComponent, HoofdgerechtenComponent, TussendoortjesComponent, DessertenComponent, RouterOutlet, RouterLink],
+  imports: [CheckoutComponent, KlokComponent, ButtonComponent, HoofdgerechtenComponent, TussendoortjesComponent, DessertenComponent, RouterOutlet, RouterLink],
   templateUrl: './drinken.component.html',
   styleUrl: './drinken.component.css'
 })
