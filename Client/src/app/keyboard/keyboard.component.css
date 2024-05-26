@@ -1,15 +1,39 @@
 button {
-  font-size: 2rem;
-  background-color: #f2f2f2;
-  width: 217px;
-  height: 130px;
+  width: 50px;
+  height: 50px;
   margin: 5px;
-  border-radius: 0.2rem;
-  outline: #222831;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
 
-.keyletter,
-.keynumber {
-  color: #222831;
-  font-size: 1.7rem;
+button:active {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  transform: translateY(2px);
+  transition: 0.01s;
+  transition-timing-function: ease-in;
 }
+.keyboard {
+  display: flex;
+  justify-content: center;
+}
+.letters,
+.numbers {
+  width: 50%;
+
+  display: flex;
+  box-sizing: border-box;
+}
+/*.letters {
+  display: flex;
+  flex-direction: column;
+  margin: left 10px;
+  margin: right 10px;
+}
+.numbers {
+  display: flex;
+  flex-direction: column;
+}*/

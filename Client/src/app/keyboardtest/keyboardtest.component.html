@@ -2,42 +2,56 @@
   <h1>keyboard</h1>
   <div class="container">
     <div class="letters">
-      <app-keyboard keyLetter="A"></app-keyboard>
-      <app-keyboard keyLetter="Z"></app-keyboard>
-      <app-keyboard keyLetter="E"></app-keyboard>
-      <app-keyboard keyLetter="R"></app-keyboard>
-      <app-keyboard keyLetter="T"></app-keyboard>
-      <app-keyboard keyLetter="Y"></app-keyboard>
-      <app-keyboard keyLetter="U"></app-keyboard>
-      <app-keyboard keyLetter="I"></app-keyboard>
-      <app-keyboard keyLetter="O"></app-keyboard>
-      <app-keyboard keyLetter="P"></app-keyboard>
-      <app-keyboard keyLetter="Q"></app-keyboard>
-      <app-keyboard keyLetter="S"></app-keyboard>
-      <app-keyboard keyLetter="D"></app-keyboard>
-      <app-keyboard keyLetter="F"></app-keyboard>
-      <app-keyboard keyLetter="G"></app-keyboard>
-      <app-keyboard keyLetter="H"></app-keyboard>
-      <app-keyboard keyLetter="J"></app-keyboard>
-      <app-keyboard keyLetter="K"></app-keyboard>
-      <app-keyboard keyLetter="L"></app-keyboard>
-      <app-keyboard keyLetter="M"></app-keyboard>
-      <app-keyboard keyLetter="W"></app-keyboard>
-      <app-keyboard keyLetter="X"></app-keyboard>
-      <app-keyboard keyLetter="C"></app-keyboard>
-      <app-keyboard keyLetter="V"></app-keyboard>
-      <app-keyboard keyLetter="B"></app-keyboard>
-      <app-keyboard keyLetter="N"></app-keyboard>
+      <div class="rowOne">
+        <app-keyboard keyLetter="A">a</app-keyboard>
+        <app-keyboard keyLetter="Z">z</app-keyboard>
+        <app-keyboard keyLetter="E">e</app-keyboard>
+        <app-keyboard keyLetter="R">r</app-keyboard>
+        <app-keyboard keyLetter="T">t</app-keyboard>
+        <app-keyboard keyLetter="Y">y</app-keyboard>
+        <app-keyboard keyLetter="U">u</app-keyboard>
+        <app-keyboard keyLetter="I">i</app-keyboard>
+        <app-keyboard keyLetter="O">o</app-keyboard>
+        <app-keyboard keyLetter="P">p</app-keyboard>
+      </div>
+      <div class="rowTwo">
+        <app-keyboard keyLetter="Q">q</app-keyboard>
+        <app-keyboard keyLetter="S">s</app-keyboard>
+        <app-keyboard keyLetter="D">d</app-keyboard>
+        <app-keyboard keyLetter="F">f</app-keyboard>
+        <app-keyboard keyLetter="G">g</app-keyboard>
+        <app-keyboard keyLetter="H">h</app-keyboard>
+        <app-keyboard keyLetter="J">j</app-keyboard>
+        <app-keyboard keyLetter="K">k</app-keyboard>
+        <app-keyboard keyLetter="L">l</app-keyboard>
+        <app-keyboard keyLetter="M">m</app-keyboard>
+      </div>
+      <div class="rowThree">
+        <app-keyboard keyLetter="W">w</app-keyboard>
+        <app-keyboard keyLetter="X">x</app-keyboard>
+        <app-keyboard keyLetter="C">c</app-keyboard>
+        <app-keyboard keyLetter="V">v</app-keyboard>
+        <app-keyboard keyLetter="B">b</app-keyboard>
+        <app-keyboard keyLetter="N">n</app-keyboard>
+      </div>
     </div>
-    <div class="numbers"></div>
-    <app-keyboard [keyNumber]="7"></app-keyboard>
-    <app-keyboard [keyNumber]="8"></app-keyboard>
-    <app-keyboard [keyNumber]="9"></app-keyboard>
-    <app-keyboard [keyNumber]="4"></app-keyboard>
-    <app-keyboard [keyNumber]="5"></app-keyboard>
-    <app-keyboard [keyNumber]="6"></app-keyboard>
-    <app-keyboard [keyNumber]="1"></app-keyboard>
-    <app-keyboard [keyNumber]="2"></app-keyboard>
-    <app-keyboard [keyNumber]="3"></app-keyboard>
+    <div class="numbers">
+      <div class="rowOne">
+        <app-keyboard [keyNumber]="7">7</app-keyboard>
+        <app-keyboard [keyNumber]="8">8</app-keyboard>
+        <app-keyboard [keyNumber]="9">9</app-keyboard>
+      </div>
+      <div class="rowTwo">
+        <app-keyboard [keyNumber]="4">4</app-keyboard>
+        <app-keyboard [keyNumber]="5">5</app-keyboard>
+        <app-keyboard [keyNumber]="6">6</app-keyboard>
+      </div>
+
+      <div class="rowThree">
+        <app-keyboard [keyNumber]="1">1</app-keyboard>
+        <app-keyboard [keyNumber]="2">2</app-keyboard>
+        <app-keyboard [keyNumber]="3">3</app-keyboard>
+      </div>
+    </div>
   </div>
 </main>
