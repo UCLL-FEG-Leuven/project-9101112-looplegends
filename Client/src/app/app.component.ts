@@ -7,23 +7,28 @@ import { DrinkenComponent } from './drinken/drinken.component';
 import { HoofdgerechtenComponent } from './hoofdgerechten/hoofdgerechten.component';
 import { TussendoortjesComponent } from './tussendoortjes/tussendoortjes.component';
 import { DessertenComponent } from './desserten/desserten.component';
-
+import { KeyboardtestComponent } from './keyboardtest/keyboardtest.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, KlokComponent, ButtonComponent, DrinkenComponent, HoofdgerechtenComponent, TussendoortjesComponent, DessertenComponent],
+  imports: [
+    RouterOutlet,
+    KlokComponent,
+    ButtonComponent,
+    DrinkenComponent,
+    HoofdgerechtenComponent,
+    TussendoortjesComponent,
+    DessertenComponent,
+    KeyboardtestComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-
-
 })
 export class AppComponent {
   clickedButtons: { [key: string]: { count: number; price: number } } = {};
   clickedButtonTitle: string = '';
   totalCost: number = 0;
-
-
 
   showTitle(category: string, price: number) {
     if (!this.clickedButtons[category]) {
