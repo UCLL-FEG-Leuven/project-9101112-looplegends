@@ -1,1 +1,79 @@
-<router-outlet></router-outlet>
+<header>
+  <nav>
+    <div class="Head">
+      <p>Kassa App</p>
+      <app-klok></app-klok>
+      <img src="assets/PicKassa.png" alt="PicKassa" />
+    </div>
+  </nav>
+</header>
+
+<main class="main">
+
+
+  <div class="Bovenstuk">
+    <div class="button-container">
+      <app-button text="Button 1" [price]="10" category="Category1" (click)="showTitle('Category1', 10)"></app-button>
+      <app-button text="Button 2" [price]="20" category="Category2" (click)="showTitle('Category2', 20)"></app-button>
+      <app-button text="Button 3" [price]="30" category="Category3" (click)="showTitle('Category3', 30)"></app-button>
+      <app-button text="Button 4" [price]="40" category="Category4" (click)="showTitle('Category4', 40)"></app-button>
+      <app-button text="Button 5" [price]="50" category="Category5" (click)="showTitle('Category5', 50)"></app-button>
+      <app-button text="Button 6" [price]="60" category="Category6" (click)="showTitle('Category6', 60)"></app-button>
+      <app-button text="Button 7" [price]="70" category="Category7" (click)="showTitle('Category7', 70)"></app-button>
+      <app-button text="Button 8" [price]="80" category="Category8" (click)="showTitle('Category8', 80)"></app-button>
+      <app-button text="Button 9" [price]="90" category="Category9" (click)="showTitle('Category9', 90)"></app-button>
+      <app-button text="Button 10" [price]="100" category="Category10"
+        (click)="showTitle('Category10', 100)"></app-button>
+      <app-button text="Button 11" [price]="110" category="Category11"
+        (click)="showTitle('Category11', 110)"></app-button>
+      <app-button text="Button 12" [price]="120" category="Category12"
+        (click)="showTitle('Category12', 120)"></app-button>
+      <app-button text="Button 13" [price]="130" category="Category13"
+        (click)="showTitle('Category13', 130)"></app-button>
+      <app-button text="Button 14" [price]="140" category="Category14"
+        (click)="showTitle('Category14', 140)"></app-button>
+      <app-button text="Button 15" [price]="150" category="Category15"
+        (click)="showTitle('Category15', 150)"></app-button>
+    </div>
+
+    <div class="Categorys">
+      <button class="CategoryButton">Drinken</button>
+      <button class="CategoryButton">Hoofdmaaltijden</button>
+      <button class="CategoryButton">Tussendoortjes</button>
+    </div>
+
+    <div class="Zijbalk">
+      <button class="ButtonZijBalk">Saldo</button>
+      <button class="ButtonZijBalk">Reload</button>
+      <button class="ButtonZijBalk">Print bon</button>
+    </div>
+  </div>
+
+  <div class="Onderbalk">
+    <div class="Eindafrekening">
+      <div class="Onderste">
+
+
+        <div class="Checkout" [innerHTML]="clickedButtonTitle"></div>
+
+      </div>
+    </div>
+
+    <div class="Categorys">
+      <button class="CategoryButton">Deserten</button>
+      <div class="total-cost">
+        <p>Totale kosten: </p>
+        <p>€{{ totalCost }}</p>
+      </div>
+    </div>
+
+    <div class="Zijbalk">
+      <div class="plusandmin">
+        <button class="plus">+</button>
+        <button class="min">-</button>
+        <button class="delete">x</button>
+      </div> <button class="ButtonZijBalk">Betaal</button>
+    </div>
+  </div>
+  <router-outlet />
+</main>
