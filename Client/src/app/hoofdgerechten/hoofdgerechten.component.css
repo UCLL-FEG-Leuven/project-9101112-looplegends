@@ -1,0 +1,120 @@
+.Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.Head img {
+    width: 60px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.Head p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.main {
+    height: 91vh;
+}
+
+.total-cost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    height: 17vh;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    background-color: lightslategray;
+    border: 1px solid black;
+}
+
+section {
+    border: 2px solid black;
+}
+
+.Eindafrekening {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    border-top-right-radius: 1rem;
+    height: 35.8vh;
+    width: 73.5vw;
+    padding-bottom: 1rem;
+    overflow-x: scroll;
+}
+
+.Zijbalk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonZijBalk {
+    width: 12vw;
+    height: 17vh;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    background-color: lightgreen;
+}
+
+.Categorys {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CategoryButton {
+    width: 12vw;
+    height: 17vh;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    background-color: lightgreen;
+}
+
+.plus {
+    width: 5.7vw;
+    height: 8vh;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    background-color: lightgreen;
+}
+
+.min {
+    width: 5.7vw;
+    height: 8vh;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    background-color: lightsalmon;
+}
+
+.delete {
+    width: 11.85vw;
+    height: 8.1vh;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    background-color: lightblue;
+}
+
+.Bovenstuk {
+    display: grid;
+    grid-template-columns: 75% 1fr 1fr;
+}
+
+.Onderbalk {
+    display: grid;
+    grid-template-columns: 75% 1fr 1fr;
+}
+
+
+.Checkout {
+    font-size: 2rem;
+}
