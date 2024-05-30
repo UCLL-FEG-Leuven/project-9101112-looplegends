@@ -4,9 +4,8 @@ import { Component, Input } from '@angular/core';
   selector: 'app-keyboard',
   standalone: true,
   templateUrl: './keyboard.component.html',
-  styleUrl: './keyboard.component.css',
+  styleUrls: ['./keyboard.component.css'],
 })
 export class KeyboardComponent {
-  @Input() keyLetter: string = 'Default Letter';
-  @Input() keyNumber: number = 0;
+  @Input() keyNumber: number | null = null;
 }

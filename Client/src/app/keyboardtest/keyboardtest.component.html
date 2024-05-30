@@ -2,42 +2,56 @@
   <h1>keyboard</h1>
   <div class="container">
     <div class="letters">
-      <app-keyboard keyLetter="A"></app-keyboard>
-      <app-keyboard keyLetter="Z"></app-keyboard>
-      <app-keyboard keyLetter="E"></app-keyboard>
-      <app-keyboard keyLetter="R"></app-keyboard>
-      <app-keyboard keyLetter="T"></app-keyboard>
-      <app-keyboard keyLetter="Y"></app-keyboard>
-      <app-keyboard keyLetter="U"></app-keyboard>
-      <app-keyboard keyLetter="I"></app-keyboard>
-      <app-keyboard keyLetter="O"></app-keyboard>
-      <app-keyboard keyLetter="P"></app-keyboard>
-      <app-keyboard keyLetter="Q"></app-keyboard>
-      <app-keyboard keyLetter="S"></app-keyboard>
-      <app-keyboard keyLetter="D"></app-keyboard>
-      <app-keyboard keyLetter="F"></app-keyboard>
-      <app-keyboard keyLetter="G"></app-keyboard>
-      <app-keyboard keyLetter="H"></app-keyboard>
-      <app-keyboard keyLetter="J"></app-keyboard>
-      <app-keyboard keyLetter="K"></app-keyboard>
-      <app-keyboard keyLetter="L"></app-keyboard>
-      <app-keyboard keyLetter="M"></app-keyboard>
-      <app-keyboard keyLetter="W"></app-keyboard>
-      <app-keyboard keyLetter="X"></app-keyboard>
-      <app-keyboard keyLetter="C"></app-keyboard>
-      <app-keyboard keyLetter="V"></app-keyboard>
-      <app-keyboard keyLetter="B"></app-keyboard>
-      <app-keyboard keyLetter="N"></app-keyboard>
+      <div class="rowOne">
+        <app-keyboard-letter keyLetter="A">a</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="Z">z</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="E">e</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="R">r</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="T">t</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="Y">y</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="U">u</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="I">i</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="O">o</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="P">p</app-keyboard-letter>
+      </div>
+      <div class="rowTwo">
+        <app-keyboard-letter keyLetter="Q">q</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="S">s</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="D">d</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="F">f</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="G">g</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="H">h</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="J">j</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="K">k</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="L">l</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="M">m</app-keyboard-letter>
+      </div>
+      <div class="rowThree">
+        <app-keyboard-letter keyLetter="W">w</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="X">x</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="C">c</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="V">v</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="B">b</app-keyboard-letter>
+        <app-keyboard-letter keyLetter="N">n</app-keyboard-letter>
+      </div>
     </div>
-    <div class="numbers"></div>
-    <app-keyboard [keyNumber]="7"></app-keyboard>
-    <app-keyboard [keyNumber]="8"></app-keyboard>
-    <app-keyboard [keyNumber]="9"></app-keyboard>
-    <app-keyboard [keyNumber]="4"></app-keyboard>
-    <app-keyboard [keyNumber]="5"></app-keyboard>
-    <app-keyboard [keyNumber]="6"></app-keyboard>
-    <app-keyboard [keyNumber]="1"></app-keyboard>
-    <app-keyboard [keyNumber]="2"></app-keyboard>
-    <app-keyboard [keyNumber]="3"></app-keyboard>
+    <div class="numbers">
+      <div class="rowOne">
+        <app-keyboard [keyNumber]="7">7</app-keyboard>
+        <app-keyboard [keyNumber]="8">8</app-keyboard>
+        <app-keyboard [keyNumber]="9">9</app-keyboard>
+      </div>
+      <div class="rowTwo">
+        <app-keyboard [keyNumber]="4">4</app-keyboard>
+        <app-keyboard [keyNumber]="5">5</app-keyboard>
+        <app-keyboard [keyNumber]="6">6</app-keyboard>
+      </div>
+
+      <div class="rowThree">
+        <app-keyboard [keyNumber]="1">1</app-keyboard>
+        <app-keyboard [keyNumber]="2">2</app-keyboard>
+        <app-keyboard [keyNumber]="3">3</app-keyboard>
+      </div>
+    </div>
   </div>
 </main>
