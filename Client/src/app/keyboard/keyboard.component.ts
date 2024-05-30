@@ -7,6 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./keyboard.component.css'],
 })
 export class KeyboardComponent {
-  @Input() keyLetter: string = '';
-  @Input() keyNumber: number = 0;
+  @Input() keyNumber: number | null = null;
 }
