@@ -31,6 +31,7 @@
     font-size: 1.5rem;
     background-color: lightslategray;
     border: 1px solid black;
+    border-radius: 0.5rem;
 }
 
 section {
@@ -38,12 +39,6 @@ section {
 }
 
 .Eindafrekening {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: lightgrey;
-    border: 1px solid grey;
-
     overflow-y: scroll;
 }
 
@@ -60,6 +55,10 @@ section {
     margin: 0.2rem;
     font-size: 1.5rem;
     background-color: lightgreen;
+    border-radius: 0.5rem;
+
+
+
 }
 
 .Categorys {
@@ -75,6 +74,7 @@ section {
     margin: 0.2rem;
     font-size: 1.5rem;
     background-color: lightgreen;
+    border-radius: 0.5rem;
 }
 
 
@@ -94,17 +94,17 @@ section {
     margin: 0.2rem;
     border: 1px solid black;
     border-radius: 2rem;
-    width: 3vw;
-    height: 6vh;
-    font-size: 1.5rem;
+    width: 4vw;
+    height: 7vh;
+    font-size: 2rem;
 }
 
 .ButtonAanpassenWinkelmandjeDelete {
     border: 1px solid black;
     border-radius: 2rem;
     width: 7vw;
-    height: 6vh;
-    font-size: 1.5rem;
+    height: 7vh;
+    font-size: 1.8rem;
 }
 
 
@@ -116,5 +116,60 @@ section {
     width: 217px;
     height: 130px;
     margin: 5px;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+
+
+.CheckoutItemsTitles {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0.3rem;
+
+}
+
+
+
+.Winkelmandje {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 8% 8% 10%;
+    align-items: center;
+    justify-items: center;
+    border: 3px solid black;
+    min-height: 10vh;
+}
+
+.Checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 8% 8% 10%;
+    align-items: center;
+    justify-items: center;
+    border: 3px solid black;
+}
+
+.Onderste {
+    overflow-y: scroll;
+    max-height: 36vh;
+    background-color: lightgrey;
+}
+
+
+.quantity {
+    color: blue;
+    font-size: 2rem;
+}
+
+.title {
+    color: purple;
+    font-size: 2rem;
+}
+
+.price {
+    color: brown;
+    font-size: 2rem;
+}
+
+.total-price {
+    color: green;
+    font-size: 2rem;
 }

@@ -15,10 +15,10 @@
     <div class="Bovenstuk">
         <div class="button-container">
             <button class="Articles" (click)="addToCheckout('Cola', 2.50)">Cola <p>€2.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Cola', 2.50)">Cola <p>€2.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Cola', 2.50)">Cola <p>€2.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Cola', 2.50)">Cola <p>€2.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Cola', 2.50)">Cola <p>€2.50</p></button>
+            <button class="Articles" (click)="addToCheckout('Fanta', 2.50)">Fanta <p>€2.50</p></button>
+            <button class="Articles" (click)="addToCheckout('Sprite', 2.50)">Sprite <p>€2.50</p></button>
+            <button class="Articles" (click)="addToCheckout('Tonisteiner', 2.50)">Tonisteiner <p>€2.50</p></button>
+            <button class="Articles" (click)="addToCheckout('Ice Tea', 2.50)">Ice Tea <p>€2.50</p></button>
             <button class="Articles" (click)="addToCheckout('Cola', 2.50)">Cola <p>€2.50</p></button>
             <button class="Articles" (click)="addToCheckout('Cola', 2.50)">Cola <p>€2.50</p></button>
             <button class="Articles" (click)="addToCheckout('Cola', 2.50)">Cola <p>€2.50</p></button>
@@ -51,18 +51,27 @@
 
 
     <div class="Onderbalk">
-        <div class="Eindafrekening">
-            <div class="Onderste">
-                <div class="Checkout">
-                    <div *ngFor="let item of checkoutItems">
-                        <span>{{ item.quantity }}X {{ item.title }} - €{{ item.price }} = €{{ item.quantity *
-                            item.price
-                            }}</span>
-                        <button class="ButtonAanpassenWinkelmandje" (click)="increaseQuantity(item)">+</button>
-                        <button class="ButtonAanpassenWinkelmandje" (click)="decreaseQuantity(item)">-</button>
-                        <button class="ButtonAanpassenWinkelmandjeDelete" (click)="deleteItem(item)">Delete</button>
-                    </div>
-                </div>
+
+        <div class="Onderste">
+            <div class="Checkout">
+                <h4 class="CheckoutItemsTitles">Quantity</h4>
+                <h4 class="CheckoutItemsTitles">Title</h4>
+                <h4 class="CheckoutItemsTitles">Price</h4>
+                <h4 class="CheckoutItemsTitles">Total price</h4>
+                <h4 class="CheckoutItemsTitles"></h4>
+                <h4 class="CheckoutItemsTitles"></h4>
+                <h4 class="CheckoutItemsTitles"></h4>
+            </div>
+            <div *ngFor="let item of checkoutItems" class="Winkelmandje">
+                <span class="quantity">{{ item.quantity }}X </span>
+                <span class="title">{{ item.title }}</span>
+                <span class="price"> €{{ item.price }} </span>
+                <span class="total-price">€{{ item.quantity *
+                    item.price
+                    }}</span>
+                <button class="ButtonAanpassenWinkelmandje" (click)="increaseQuantity(item)">+</button>
+                <button class="ButtonAanpassenWinkelmandje" (click)="decreaseQuantity(item)">-</button>
+                <button class="ButtonAanpassenWinkelmandjeDelete" (click)="deleteItem(item)">Delete</button>
             </div>
         </div>
 
@@ -75,13 +84,11 @@
         </div>
 
         <div class="Zijbalk">
-            <div class="plusandmin">
-                <button class="plus">+</button>
-                <button class="min">-</button>
-                <button class="delete">x</button>
-            </div> <button class="ButtonZijBalk">Betaal</button>
+            <button class="ButtonZijBalk">Lege button</button>
+            <button class="ButtonZijBalk">Betaal</button>
         </div>
     </div>
+
 
 
 
