@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-keyboard-letter',
@@ -8,6 +8,11 @@ import { Component, Input } from '@angular/core';
   styleUrl: './keyboard-letter.component.css',
 })
 export class KeyboardLetterComponent {
-  @Input()
-  keyLetter: string = '';
+  @Input() keyLetter: string = '';
+  @Output()
+  keyPressed = new EventEmitter<string>();
+
+  onClick() {
+    this.keyPressed.emit(this.keyLetter);
+  }
 }
