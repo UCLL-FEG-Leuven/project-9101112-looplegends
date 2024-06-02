@@ -111,8 +111,8 @@ section {
 
 
 .Articles {
-    font-size: 2rem;
-    background-color: lightyellow;
+    font-size: 1rem;
+    background-color: lightcyan;
     width: 217px;
     height: 130px;
     margin: 5px;
@@ -154,22 +154,9 @@ section {
 }
 
 
-.quantity {
-    color: blue;
-    font-size: 2rem;
-}
-
-.title {
-    color: purple;
-    font-size: 2rem;
-}
-
-.price {
-    color: brown;
-    font-size: 2rem;
-}
-
+.quantity,
+.title,
+.price,
 .total-price {
-    color: green;
     font-size: 2rem;
 }
