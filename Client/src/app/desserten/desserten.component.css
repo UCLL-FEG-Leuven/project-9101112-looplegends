@@ -1,0 +1,166 @@
+.Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.Head img {
+    width: 60px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.Head p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.main {
+    height: 91vh;
+}
+
+.total-cost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    height: 17vh;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    background-color: lightslategray;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+section {
+    border: 2px solid black;
+}
+
+.Eindafrekening {
+    overflow-y: scroll;
+}
+
+.Zijbalk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonZijBalk {
+    width: 12vw;
+    height: 17vh;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    background-color: lightgreen;
+    border-radius: 0.5rem;
+
+
+
+}
+
+.Categorys {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CategoryButton {
+    width: 12vw;
+    height: 17vh;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    background-color: lightgreen;
+    border-radius: 0.5rem;
+}
+
+
+
+.Bovenstuk {
+    display: grid;
+    grid-template-columns: 75% 1fr 1fr;
+}
+
+.Onderbalk {
+    display: grid;
+    grid-template-columns: 75% 1fr 1fr;
+}
+
+
+.ButtonAanpassenWinkelmandje {
+    margin: 0.2rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    width: 4vw;
+    height: 7vh;
+    font-size: 2rem;
+}
+
+.ButtonAanpassenWinkelmandjeDelete {
+    border: 1px solid black;
+    border-radius: 2rem;
+    width: 7vw;
+    height: 7vh;
+    font-size: 1.8rem;
+}
+
+
+
+
+.Articles {
+    font-size: 1.5rem;
+    background-color: lightcyan;
+    width: 217px;
+    height: 140px;
+    margin: 5px;
+    border-radius: 0.5rem;
+}
+
+.Articles h4 {
+    font-size: 1.4rem;
+}
+
+
+
+.CheckoutItemsTitles {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0.3rem;
+
+}
+
+
+
+.Winkelmandje {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 8% 8% 10%;
+    align-items: center;
+    justify-items: center;
+    border: 3px solid black;
+    min-height: 10vh;
+}
+
+.Checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 8% 8% 10%;
+    align-items: center;
+    justify-items: center;
+    border: 3px solid black;
+}
+
+.Onderste {
+    overflow-y: scroll;
+    max-height: 36vh;
+    background-color: lightgrey;
+}
+
+
+.quantity,
+.title,
+.price,
+.total-price {
+    font-size: 2rem;
+}

@@ -111,12 +111,16 @@ section {
 
 
 .Articles {
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: lightcyan;
     width: 217px;
-    height: 130px;
+    height: 140px;
     margin: 5px;
     border-radius: 0.5rem;
+}
+
+.Articles h4 {
+    font-size: 1.4rem;
 }
 
 

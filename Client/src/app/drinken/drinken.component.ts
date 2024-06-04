@@ -74,11 +74,18 @@ export class DrinkenComponent implements OnInit {
   }
 
   private calculateTotalCost(): void {
-    this.totalCost = this.checkoutItems.reduce((total, item) => total + (item.quantity * item.price), 0);
+    const total = this.checkoutItems.reduce((total, item) => total + (item.quantity * item.price), 0);
+    this.totalCost = parseFloat(total.toFixed(2));
   }
+
 
   private saveItems(): void {
     localStorage.setItem('checkoutItems', JSON.stringify(this.checkoutItems));
+  }
+
+  public ResetItems(): void {
+    localStorage.clear();
+    window.location.reload();
   }
 
 

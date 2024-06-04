@@ -14,21 +14,66 @@
 
     <div class="Bovenstuk">
         <div class="button-container">
-            <button class="Articles" (click)="addToCheckout('Cola', 1.50)">Cola <p>€1.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Fanta', 1.50)">Fanta <p>€1.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Sprite', 1.50)">Sprite <p>€1.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Water', 1.00)">Water <p>€1.00</p></button>
-            <button class="Articles" (click)="addToCheckout('Koffie', 1.20)">Koffie <p>€1.20</p></button>
-            <button class="Articles" (click)="addToCheckout('Thee', 1.20)">Thee <p>€1.20</p></button>
-            <button class="Articles" (click)="addToCheckout('Cappuccino', 2.00)">Cappuccino <p>€2.00</p></button>
-            <button class="Articles" (click)="addToCheckout('Espresso', 1.50)">Espresso <p>€1.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Latte', 2.50)">Latte <p>€2.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Chocomelk', 1.50)">Chocomelk <p>€1.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Jus d\'orange', 2.00)">Jus d'orange <p>€2.00</p></button>
-            <button class="Articles" (click)="addToCheckout('Smoothie', 2.50)">Smoothie <p>€2.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Iced Tea', 1.80)">Iced Tea <p>€1.80</p></button>
-            <button class="Articles" (click)="addToCheckout('Fristi', 1.50)">Fristi <p>€1.50</p></button>
-            <button class="Articles" (click)="addToCheckout('Energy Drink', 2.00)">Energy Drink <p>€2.00</p></button>
+            <button class="Articles" (click)="addToCheckout('Cola', 1.50)">
+                <h4>Cola</h4>
+                <p>€1.50</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Fanta', 1.50)">
+                <h4>Fanta</h4>
+                <p>€1.50</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Sprite', 1.50)">
+                <h4>Sprite</h4>
+                <p>€1.50</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Water', 1.00)">
+                <h4>Water</h4>
+                <p>€1.00</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Koffie', 1.20)">
+                <h4>Koffie</h4>
+                <p>€1.20</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Thee', 1.20)">
+                <h4>Thee</h4>
+                <p>€1.20</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Cappuccino', 2.00)">
+                <h4>Cappuccino</h4>
+                <p>€2.00</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Espresso', 1.50)">
+                <h4>Espresso</h4>
+                <p>€1.50</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Latte', 2.50)">
+                <h4>Latte</h4>
+                <p>€2.50</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Chocomelk', 1.50)">
+                <h4>Chocomelk</h4>
+                <p>€1.50</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Jus d\'orange', 2.00)">
+                <h4>Jus d'orange</h4>
+                <p>€2.00</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Smoothie', 2.50)">
+                <h4>Smoothie</h4>
+                <p>€2.50</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Iced Tea', 1.80)">
+                <h4>Iced Tea</h4>
+                <p>€1.80</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Fristi', 1.50)">
+                <h4>Fristi</h4>
+                <p>€1.50</p>
+            </button>
+            <button class="Articles" (click)="addToCheckout('Energy Drink', 2.00)">
+                <h4>Energy Drink</h4>
+                <p>€2.00</p>
+            </button>
         </div>
 
         <div>
@@ -44,7 +89,7 @@
 
         <div class="Zijbalk">
             <button class="ButtonZijBalk">Lege button</button>
-            <a href=""><button class="ButtonZijBalk">Reload</button></a>
+            <button class="ButtonZijBalk" (click)="ResetItems()">Reload</button>
             <button class="ButtonZijBalk">Print bon</button>
             <!-- PRINT BON: Dit moet een alert geven met printing bon. Na 7.5 seconden terug naar hoofdscherm en reload pagina. -->
         </div>
