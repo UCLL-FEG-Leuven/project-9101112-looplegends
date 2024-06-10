@@ -18,6 +18,6 @@ export class KlokComponent {
 
       const hour = currentTime.getHours();
       this.opening = hour >= 9 && hour <= 17;
-    }, 1000);
+    }, 1);
   }
 }
