@@ -1,0 +1,16 @@
+<div *ngFor="let item of checkoutItems" class="Winkelmandje">
+  <span class="quantity">{{ item.quantity }}X </span>
+  <span class="title">{{ item.title }}</span>
+  <span class="price"> €{{ item.price }} </span>
+  <span class="total-price">€{{ item.quantity * item.price }}</span>
+</div>
+
+<div class="Categorys">
+  <a [routerLink]="['/drinken']" routerLinkActive="active">
+    <button class="CategoryButton">Return Back</button>
+  </a>
+  <div class="total-cost">
+    <p>Totale kosten:</p>
+    <p>€{{ totalCost }}</p>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { KlokComponent } from '../klok/klok.component';
 import { ButtonComponent } from '../button/button.component';
@@ -7,6 +7,7 @@ import { HoofdgerechtenComponent } from '../hoofdgerechten/hoofdgerechten.compon
 import { TussendoortjesComponent } from '../tussendoortjes/tussendoortjes.component';
 import { DrinkenComponent } from '../drinken/drinken.component';
 import { CommonModule } from '@angular/common';
+import { BonComponent } from '../bon/bon.component';
 
 interface CheckoutItem {
   title: string;
@@ -14,20 +15,28 @@ interface CheckoutItem {
   price: number;
 }
 
-
 @Component({
   selector: 'app-desserten',
   standalone: true,
-  imports: [KlokComponent, ButtonComponent, HoofdgerechtenComponent, TussendoortjesComponent, DrinkenComponent, RouterOutlet, RouterLink, CommonModule],
+  imports: [
+    KlokComponent,
+    ButtonComponent,
+    HoofdgerechtenComponent,
+    TussendoortjesComponent,
+    DrinkenComponent,
+    RouterOutlet,
+    RouterLink,
+    CommonModule,
+    BonComponent,
+  ],
   templateUrl: './desserten.component.html',
-  styleUrl: './desserten.component.css'
+  styleUrl: './desserten.component.css',
 })
 export class DessertenComponent implements OnInit {
   checkoutItems: CheckoutItem[] = [];
   totalCost: number = 0;
 
-  constructor() { }
-
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     const savedItems = localStorage.getItem('checkoutItems');
@@ -38,7 +47,7 @@ export class DessertenComponent implements OnInit {
   }
 
   addToCheckout(title: string, price: number): void {
-    const item = this.checkoutItems.find(i => i.title === title);
+    const item = this.checkoutItems.find((i) => i.title === title);
     if (item) {
       item.quantity += 1;
     } else {
@@ -74,10 +83,12 @@ export class DessertenComponent implements OnInit {
   }
 
   private calculateTotalCost(): void {
-    const total = this.checkoutItems.reduce((total, item) => total + (item.quantity * item.price), 0);
+    const total = this.checkoutItems.reduce(
+      (total, item) => total + item.quantity * item.price,
+      0
+    );
     this.totalCost = parseFloat(total.toFixed(2));
   }
-
 
   private saveItems(): void {
     localStorage.setItem('checkoutItems', JSON.stringify(this.checkoutItems));
@@ -87,9 +98,12 @@ export class DessertenComponent implements OnInit {
     localStorage.clear();
     window.location.reload();
   }
-
-
-
-
-
+  printBon() {
+    this.router.navigate(['/bon']).then(() => {
+      setTimeout(() => {
+        this.router.navigate(['/drinken']); // Navigate back to the main screen after printing
+        location.reload(); // Reload the page after navigation
+      }, 7500);
+    });
+  }
 }

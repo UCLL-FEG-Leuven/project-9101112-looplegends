@@ -1,156 +1,166 @@
 <header>
-    <nav>
-        <div class="Head">
-            <p>Kassa App</p>
-            <app-klok></app-klok>
-            <img src="assets/PicKassa.png" alt="PicKassa" />
-
-        </div>
-    </nav>
+  <nav>
+    <div class="Head">
+      <p>Kassa App</p>
+      <app-klok></app-klok>
+      <img src="assets/PicKassa.png" alt="PicKassa" />
+    </div>
+  </nav>
 </header>
 
 <main class="main">
+  <div class="Bovenstuk">
+    <div class="button-container">
+      <button class="Articles" (click)="addToCheckout('Brownie', 1.0)">
+        <h4>Brownie</h4>
+        <p>€1.00</p>
+      </button>
 
+      <button class="Articles" (click)="addToCheckout('Chocoladevla', 1.0)">
+        <h4>Chocoladevla</h4>
+        <p>€1.00</p>
+      </button>
 
-    <div class="Bovenstuk">
-        <div class="button-container">
-            <button class="Articles" (click)="addToCheckout('Brownie', 1.00)">
-                <h4>Brownie</h4>
-                <p>€1.00</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Aardbeienvla', 1.0)">
+        <h4>Aardbeienvla</h4>
+        <p>€1.00</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Chocoladevla', 1.00)">
-                <h4>Chocoladevla</h4>
-                <p>€1.00</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Pudding', 1.2)">
+        <h4>Pudding</h4>
+        <p>€1.20</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Aardbeienvla', 1.00)">
-                <h4>Aardbeienvla</h4>
-                <p>€1.00</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Yoghurt', 1.0)">
+        <h4>Yoghurt</h4>
+        <p>€1.00</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Pudding', 1.20)">
-                <h4>Pudding</h4>
-                <p>€1.20</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Vruchtenyoghurt', 1.2)">
+        <h4>Vruchtenyoghurt</h4>
+        <p>€1.20</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Yoghurt', 1.00)">
-                <h4>Yoghurt</h4>
-                <p>€1.00</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Fruitbowl', 1.5)">
+        <h4>Fruitbowl</h4>
+        <p>€1.50</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Vruchtenyoghurt', 1.20)">
-                <h4>Vruchtenyoghurt</h4>
-                <p>€1.20</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('IJslolly', 1.0)">
+        <h4>IJslolly</h4>
+        <p>€1.00</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Fruitbowl', 1.50)">
-                <h4>Fruitbowl</h4>
-                <p>€1.50</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Softijs', 1.5)">
+        <h4>Softijs</h4>
+        <p>€1.50</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('IJslolly', 1.00)">
-                <h4>IJslolly</h4>
-                <p>€1.00</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Roomijs', 1.5)">
+        <h4>Roomijs</h4>
+        <p>€1.50</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Softijs', 1.50)">
-                <h4>Softijs</h4>
-                <p>€1.50</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Chocolademousse', 1.2)">
+        <h4>Chocolademousse</h4>
+        <p>€1.20</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Roomijs', 1.50)">
-                <h4>Roomijs</h4>
-                <p>€1.50</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Appeltaart', 2.0)">
+        <h4>Appeltaart</h4>
+        <p>€2.00</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Chocolademousse', 1.20)">
-                <h4>Chocolademousse</h4>
-                <p>€1.20</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Cheesecake', 2.5)">
+        <h4>Cheesecake</h4>
+        <p>€2.50</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Appeltaart', 2.00)">
-                <h4>Appeltaart</h4>
-                <p>€2.00</p>
-            </button>
+      <button class="Articles" (click)="addToCheckout('Brownie', 1.5)">
+        <h4>Brownie</h4>
+        <p>€1.50</p>
+      </button>
 
-            <button class="Articles" (click)="addToCheckout('Cheesecake', 2.50)">
-                <h4>Cheesecake</h4>
-                <p>€2.50</p>
-            </button>
-
-            <button class="Articles" (click)="addToCheckout('Brownie', 1.50)">
-                <h4>Brownie</h4>
-                <p>€1.50</p>
-            </button>
-
-            <button class="Articles" (click)="addToCheckout('Cupcake', 1.20)">
-                <h4>Cupcake</h4>
-                <p>€1.20</p>
-            </button>
-
-        </div>
-
-        <div>
-            <div class="Categorys">
-                <a routerLink="/drinken" routerLinkActive="active"><button class="CategoryButton">Drinken</button></a>
-                <a routerLink="/hoofdgerechten" routerLinkActive="active"><button
-                        class="CategoryButton">Hoofdgerechten</button></a>
-                <a routerLink="/tussendoortjes" routerLinkActive="active"><button
-                        class="CategoryButton">Tussendoortjes</button></a>
-            </div>
-        </div>
-
-
-        <div class="Zijbalk">
-            <button class="ButtonZijBalk">Lege button</button>
-            <button class="ButtonZijBalk" (click)="ResetItems()">Reload</button>
-            <button class="ButtonZijBalk">Print bon</button>
-            <!-- PRINT BON: Dit moet een alert geven met printing bon. Na 7.5 seconden terug naar hoofdscherm en reload pagina. -->
-        </div>
+      <button class="Articles" (click)="addToCheckout('Cupcake', 1.2)">
+        <h4>Cupcake</h4>
+        <p>€1.20</p>
+      </button>
     </div>
 
-
-    <div class="Onderbalk">
-
-        <div class="Onderste">
-            <div class="Checkout">
-                <h4 class="CheckoutItemsTitles">Quantity</h4>
-                <h4 class="CheckoutItemsTitles">Title</h4>
-                <h4 class="CheckoutItemsTitles">Price</h4>
-                <h4 class="CheckoutItemsTitles">Total price</h4>
-                <h4 class="CheckoutItemsTitles"></h4>
-                <h4 class="CheckoutItemsTitles"></h4>
-                <h4 class="CheckoutItemsTitles"></h4>
-            </div>
-            <div *ngFor="let item of checkoutItems" class="Winkelmandje">
-                <span class="quantity">{{ item.quantity }}X </span>
-                <span class="title">{{ item.title }}</span>
-                <span class="price"> €{{ item.price }} </span>
-                <span class="total-price">€{{ item.quantity *
-                    item.price
-                    }}</span>
-                <button class="ButtonAanpassenWinkelmandje" (click)="increaseQuantity(item)">+</button>
-                <button class="ButtonAanpassenWinkelmandje" (click)="decreaseQuantity(item)">-</button>
-                <button class="ButtonAanpassenWinkelmandjeDelete" (click)="deleteItem(item)">Delete</button>
-            </div>
-        </div>
-
-        <div class="Categorys">
-            <a routerLink="/desserten" routerLinkActive="active"><button class="CategoryButton">Desserten</button></a>
-            <div class="total-cost">
-                <p>Totale kosten: </p>
-                <p>€{{ totalCost }}</p>
-            </div>
-        </div>
-
-        <div class="Zijbalk">
-            <button class="ButtonZijBalk">Lege button</button>
-            <button class="ButtonZijBalk">Betaal</button>
-        </div>
+    <div>
+      <div class="Categorys">
+        <a routerLink="/drinken" routerLinkActive="active"
+          ><button class="CategoryButton">Drinken</button></a
+        >
+        <a routerLink="/hoofdgerechten" routerLinkActive="active"
+          ><button class="CategoryButton">Hoofdgerechten</button></a
+        >
+        <a routerLink="/tussendoortjes" routerLinkActive="active"
+          ><button class="CategoryButton">Tussendoortjes</button></a
+        >
+      </div>
     </div>
 
+    <div class="Zijbalk">
+      <button class="ButtonZijBalk">Lege button</button>
+      <button class="ButtonZijBalk" (click)="ResetItems()">Reload</button>
+      <button class="ButtonZijBalk" (click)="printBon()">Print bon</button>
+      <!-- PRINT BON: Dit moet een alert geven met printing bon. Na 7.5 seconden terug naar hoofdscherm en reload pagina. -->
+    </div>
+  </div>
 
+  <div class="Onderbalk">
+    <div class="Onderste">
+      <div class="Checkout">
+        <h4 class="CheckoutItemsTitles">Quantity</h4>
+        <h4 class="CheckoutItemsTitles">Title</h4>
+        <h4 class="CheckoutItemsTitles">Price</h4>
+        <h4 class="CheckoutItemsTitles">Total price</h4>
+        <h4 class="CheckoutItemsTitles"></h4>
+        <h4 class="CheckoutItemsTitles"></h4>
+        <h4 class="CheckoutItemsTitles"></h4>
+      </div>
+      <div *ngFor="let item of checkoutItems" class="Winkelmandje">
+        <span class="quantity">{{ item.quantity }}X </span>
+        <span class="title">{{ item.title }}</span>
+        <span class="price"> €{{ item.price }} </span>
+        <span class="total-price">€{{ item.quantity * item.price }}</span>
+        <button
+          class="ButtonAanpassenWinkelmandje"
+          (click)="increaseQuantity(item)"
+        >
+          +
+        </button>
+        <button
+          class="ButtonAanpassenWinkelmandje"
+          (click)="decreaseQuantity(item)"
+        >
+          -
+        </button>
+        <button
+          class="ButtonAanpassenWinkelmandjeDelete"
+          (click)="deleteItem(item)"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
 
-    <router-outlet></router-outlet>
+    <div class="Categorys">
+      <a routerLink="/desserten" routerLinkActive="active"
+        ><button class="CategoryButton">Desserten</button></a
+      >
+      <div class="total-cost">
+        <p>Totale kosten:</p>
+        <p>€{{ totalCost }}</p>
+      </div>
+    </div>
+
+    <div class="Zijbalk">
+      <button class="ButtonZijBalk">Lege button</button>
+      <button class="ButtonZijBalk">Betaal</button>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
 </main>
