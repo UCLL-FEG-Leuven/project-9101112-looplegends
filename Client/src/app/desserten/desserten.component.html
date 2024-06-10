@@ -104,8 +104,9 @@
     <div class="Zijbalk">
       <button class="ButtonZijBalk">Lege button</button>
       <button class="ButtonZijBalk" (click)="ResetItems()">Reload</button>
-      <button class="ButtonZijBalk" (click)="printBon()">Print bon</button>
-      <!-- PRINT BON: Dit moet een alert geven met printing bon. Na 7.5 seconden terug naar hoofdscherm en reload pagina. -->
+      <a routerLink="/bon" routerLinkActive="active"
+        ><button class="ButtonZijBalk">Print bon</button></a
+      >
     </div>
   </div>
 
