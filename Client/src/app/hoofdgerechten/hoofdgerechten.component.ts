@@ -7,7 +7,7 @@ import { TussendoortjesComponent } from '../tussendoortjes/tussendoortjes.compon
 import { DessertenComponent } from '../desserten/desserten.component';
 import { DrinkenComponent } from '../drinken/drinken.component';
 import { CommonModule } from '@angular/common';
-
+import { LoginComponent } from '../login/login.component';
 
 interface CheckoutItem {
   title: string;
@@ -17,16 +17,25 @@ interface CheckoutItem {
 @Component({
   selector: 'app-hoofdgerechten',
   standalone: true,
-  imports: [CommonModule, DrinkenComponent, KlokComponent, ButtonComponent, TussendoortjesComponent, DessertenComponent, RouterOutlet, RouterLink],
+  imports: [
+    CommonModule,
+    DrinkenComponent,
+    KlokComponent,
+    ButtonComponent,
+    TussendoortjesComponent,
+    DessertenComponent,
+    RouterOutlet,
+    RouterLink,
+    LoginComponent,
+  ],
   templateUrl: './hoofdgerechten.component.html',
-  styleUrl: './hoofdgerechten.component.css'
+  styleUrl: './hoofdgerechten.component.css',
 })
 export class HoofdgerechtenComponent implements OnInit {
   checkoutItems: CheckoutItem[] = [];
   totalCost: number = 0;
 
-  constructor() { }
-
+  constructor() {}
 
   ngOnInit(): void {
     const savedItems = localStorage.getItem('checkoutItems');
@@ -37,7 +46,7 @@ export class HoofdgerechtenComponent implements OnInit {
   }
 
   addToCheckout(title: string, price: number): void {
-    const item = this.checkoutItems.find(i => i.title === title);
+    const item = this.checkoutItems.find((i) => i.title === title);
     if (item) {
       item.quantity += 1;
     } else {
@@ -73,10 +82,12 @@ export class HoofdgerechtenComponent implements OnInit {
   }
 
   private calculateTotalCost(): void {
-    const total = this.checkoutItems.reduce((total, item) => total + (item.quantity * item.price), 0);
+    const total = this.checkoutItems.reduce(
+      (total, item) => total + item.quantity * item.price,
+      0
+    );
     this.totalCost = parseFloat(total.toFixed(2));
   }
-
 
   private saveItems(): void {
     localStorage.setItem('checkoutItems', JSON.stringify(this.checkoutItems));
@@ -86,12 +97,4 @@ export class HoofdgerechtenComponent implements OnInit {
     localStorage.clear();
     window.location.reload();
   }
-
-
-
-
-
-
 }
-
-

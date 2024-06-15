@@ -101,8 +101,8 @@ export class DessertenComponent implements OnInit {
   printBon() {
     this.router.navigate(['/bon']).then(() => {
       setTimeout(() => {
-        this.router.navigate(['/drinken']); // Navigate back to the main screen after printing
-        location.reload(); // Reload the page after navigation
+        this.router.navigate(['/drinken']);
+        location.reload();
       }, 7500);
     });
   }
