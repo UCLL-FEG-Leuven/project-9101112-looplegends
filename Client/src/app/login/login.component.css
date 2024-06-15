@@ -1,4 +1,3 @@
-/* Container voor de gehele pagina */
 .container {
   display: flex;
   justify-content: center;
@@ -8,7 +7,6 @@
   font-family: Arial, sans-serif;
 }
 
-/* Formulier container */
 .form {
   width: 100%;
   max-width: 400px;
@@ -19,11 +17,10 @@
   text-align: center;
 }
 
-/* Input velden */
 .form input {
   width: calc(
     100% - 22px
-  ); /* Om de padding van 10px en border van 1px te compenseren */
+  ); 
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -32,12 +29,10 @@
   font-size: 16px;
 }
 
-/* Input velden met fout */
 .form input.input-error {
   border-color: red;
 }
 
-/* Labels voor de input velden */
 .form label {
   display: block;
   margin-bottom: 8px;
@@ -46,7 +41,6 @@
   text-align: left;
 }
 
-/* Submit knop */
 .form button {
   width: 100%;
   padding: 12px;
@@ -59,12 +53,10 @@
   transition: background-color 0.3s;
 }
 
-/* Submit knop hover effect */
 .form button:hover {
   background-color: #45a049;
 }
 
-/* Foutboodschappen */
 .error-message {
   color: red;
   font-size: 14px;
@@ -72,7 +64,6 @@
   text-align: left;
 }
 
-/* Succesboodschappen */
 .success-message {
   color: green;
   font-size: 14px;
@@ -80,7 +71,6 @@
   text-align: left;
 }
 
-/* Link styling */
 .link {
   color: blue;
   text-decoration: underline;
@@ -89,7 +79,6 @@
   display: inline-block;
 }
 
-/* Titel */
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
