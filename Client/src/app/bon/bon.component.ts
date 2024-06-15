@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForOf } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
+
+
 
 interface CheckoutItem {
   title: string;
@@ -11,7 +15,7 @@ interface CheckoutItem {
 @Component({
   selector: 'app-bon',
   standalone: true,
-  imports: [NgForOf, RouterModule],
+  imports: [NgForOf, RouterModule, MatSliderModule, MatIconModule, MatButtonModule],
   templateUrl: './bon.component.html',
   styleUrls: ['./bon.component.css'],
 })

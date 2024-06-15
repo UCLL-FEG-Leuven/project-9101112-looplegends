@@ -16,8 +16,9 @@
 
 <div class="Categorys">
   <a [routerLink]="['/drinken']" routerLinkActive="active">
-    <button class="CategoryButton">Return Back</button>
+    <button mat-raised-button color="primary" class="backButton">Return Back</button>
   </a>
+  <button mat-raised-button color="primary" class="printButton">Print</button>
   <div class="total-cost">
     <p>Totale kosten:</p>
     <p>€{{ totalCost }}</p>

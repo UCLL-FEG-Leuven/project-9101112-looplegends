@@ -1,53 +1,54 @@
 .CheckoutWoorden {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.scroll {
+  overflow-y: auto;
+  max-height: 300px; /* Adjust based on your needs */
 }
 
 .Winkelmandje {
-    display: flex;
-    justify-content: space-around;
-}
-
-.scroll {overflow-y: scroll;}
-
-.Winkelmandje span {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    
-    }
-
-.CategoryButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 8vw;
-    height: 8vh;
-    margin: 0.2rem;
-    border: 1px solid black;
-    font-size: 1.5rem;
-    border: 2px solid black;
-    border-radius: 1rem;
-    
-}
-
-.total-cost {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 8vw;
-    height: 8vh;
-    margin: 0.2rem;
-    font-size: 1.3rem;
-    border: 2px solid black;
-    border-radius: 1rem;
-    background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 .Categorys {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.backButton{
+border: none;
+padding: 8px 16px;
+cursor: pointer;
+border-radius: 4px;
+}
+
+.backButton:hover {
+background-color: #424343 ;
+color: white;
+}
+
+.printButton{
+border: none;
+padding: 8px 16px;
+cursor: pointer;
+border-radius: 4px;
+}
+
+.total-cost p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
