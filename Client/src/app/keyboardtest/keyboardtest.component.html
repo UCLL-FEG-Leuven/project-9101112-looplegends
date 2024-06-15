@@ -1,127 +1,123 @@
 <main>
-  <h1>keyboard</h1>
-  <div class="fillInField">
-    <app-fil-in-field [fillInField]="enteredText"></app-fil-in-field>
-  </div>
+  <h1>Keyboard</h1>
   <div class="container">
     <div class="letters">
       <div class="rowOne">
         <app-keyboard-letter keyLetter="A" (keyPressed)="onLetterPressed('A')"
-          >a</app-keyboard-letter
+          >A</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="Z" (keyPressed)="onLetterPressed('Z')"
-          >z</app-keyboard-letter
+          >Z</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="E" (keyPressed)="onLetterPressed('E')"
-          >e</app-keyboard-letter
+          >E</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="R" (keyPressed)="onLetterPressed('R')"
-          >r</app-keyboard-letter
+          >R</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="T" (keyPressed)="onLetterPressed('T')"
-          >t</app-keyboard-letter
+          >T</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="Y" (keyPressed)="onLetterPressed('Y')"
-          >y</app-keyboard-letter
+          >Y</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="U" (keyPressed)="onLetterPressed('U')"
-          >u</app-keyboard-letter
+          >U</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="I" (keyPressed)="onLetterPressed('I')"
-          >i</app-keyboard-letter
+          >I</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="O" (keyPressed)="onLetterPressed('O')"
-          >o</app-keyboard-letter
+          >O</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="P" (keyPressed)="onLetterPressed('P')"
-          >p</app-keyboard-letter
+          >P</app-keyboard-letter
         >
       </div>
       <div class="rowTwo">
         <app-keyboard-letter keyLetter="Q" (keyPressed)="onLetterPressed('Q')"
-          >q</app-keyboard-letter
+          >Q</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="S" (keyPressed)="onLetterPressed('S')"
-          >s</app-keyboard-letter
+          >S</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="D" (keyPressed)="onLetterPressed('D')"
-          >d</app-keyboard-letter
+          >D</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="F" (keyPressed)="onLetterPressed('F')"
-          >f</app-keyboard-letter
+          >F</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="G" (keyPressed)="onLetterPressed('G')"
-          >g</app-keyboard-letter
+          >G</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="H" (keyPressed)="onLetterPressed('H')"
-          >h</app-keyboard-letter
+          >H</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="J" (keyPressed)="onLetterPressed('J')"
-          >j</app-keyboard-letter
+          >J</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="K" (keyPressed)="onLetterPressed('K')"
-          >k</app-keyboard-letter
+          >K</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="L" (keyPressed)="onLetterPressed('L')"
-          >l</app-keyboard-letter
+          >L</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="M" (keyPressed)="onLetterPressed('M')"
-          >m</app-keyboard-letter
+          >M</app-keyboard-letter
         >
       </div>
       <div class="rowThree">
         <app-keyboard-letter keyLetter="W" (keyPressed)="onLetterPressed('W')"
-          >w</app-keyboard-letter
+          >W</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="X" (keyPressed)="onLetterPressed('X')"
-          >x</app-keyboard-letter
+          >X</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="C" (keyPressed)="onLetterPressed('C')"
-          >c</app-keyboard-letter
+          >C</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="V" (keyPressed)="onLetterPressed('V')"
-          >v</app-keyboard-letter
+          >V</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="B" (keyPressed)="onLetterPressed('B')"
-          >b</app-keyboard-letter
+          >B</app-keyboard-letter
         >
         <app-keyboard-letter keyLetter="N" (keyPressed)="onLetterPressed('N')"
-          >n</app-keyboard-letter
+          >N</app-keyboard-letter
         >
       </div>
     </div>
     <div class="numbers">
       <div class="rowOne">
-        <app-keyboard [keyNumber]="7" (keyPressed)="(onNumberPressed)"
+        <app-keyboard [keyNumber]="7" (keyPressed)="onNumberPressed(7)"
           >7</app-keyboard
         >
-        <app-keyboard [keyNumber]="8" (keyPressed)="(onNumberPressed)"
+        <app-keyboard [keyNumber]="8" (keyPressed)="onNumberPressed(8)"
           >8</app-keyboard
         >
-        <app-keyboard [keyNumber]="9" (keyPressed)="(onNumberPressed)"
+        <app-keyboard [keyNumber]="9" (keyPressed)="onNumberPressed(9)"
           >9</app-keyboard
         >
       </div>
       <div class="rowTwo">
-        <app-keyboard [keyNumber]="4" (keyPressed)="(onNumberPressed)"
+        <app-keyboard [keyNumber]="4" (keyPressed)="onNumberPressed(4)"
           >4</app-keyboard
         >
-        <app-keyboard [keyNumber]="5" (keyPressed)="(onNumberPressed)"
+        <app-keyboard [keyNumber]="5" (keyPressed)="onNumberPressed(5)"
           >5</app-keyboard
         >
-        <app-keyboard [keyNumber]="6" (keyPressed)="(onNumberPressed)"
+        <app-keyboard [keyNumber]="6" (keyPressed)="onNumberPressed(6)"
           >6</app-keyboard
         >
       </div>
-
       <div class="rowThree">
-        <app-keyboard [keyNumber]="1" (keyPressed)="(onNumberPressed)"
+        <app-keyboard [keyNumber]="1" (keyPressed)="onNumberPressed(1)"
           >1</app-keyboard
         >
-        <app-keyboard [keyNumber]="2" (keyPressed)="(onNumberPressed)"
+        <app-keyboard [keyNumber]="2" (keyPressed)="onNumberPressed(2)"
           >2</app-keyboard
         >
-        <app-keyboard [keyNumber]="3" (keyPressed)="(onNumberPressed)"
+        <app-keyboard [keyNumber]="3" (keyPressed)="onNumberPressed(3)"
           >3</app-keyboard
         >
       </div>

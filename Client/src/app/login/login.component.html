@@ -12,3 +12,7 @@
     <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
   </div>
 </form>
+<app-keyboardtest
+  (letterPressed)="onLetterPressed($event)"
+  (numberPressed)="onNumberPressed($event)"
+></app-keyboardtest>
