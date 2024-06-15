@@ -11,11 +11,14 @@
   width: 100%;
   max-width: 400px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: whitesmoke;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  border: 2px solid #cccccc; 
+  margin-left: 1rem;
 }
+
 
 .form input {
   width: calc(
@@ -88,5 +91,6 @@ h1 {
   margin-top: 10px;
   padding: 10px;
   max-width: fit-content;
+  color: white;
 }
 

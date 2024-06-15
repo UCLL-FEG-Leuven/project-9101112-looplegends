@@ -1,10 +1,36 @@
-.CheckoutWoorden {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  align-items: center;
-  font-size: 14px;
-  font-weight: bold;
+.Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    background-color: #185AC3;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.Head img {
+    width: 60px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.Head p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    border: 10px solid #c3185a;
+    background-color: #c3185a;
+    padding: 10px;
+    max-width: fit-content;
+    max-height: fit-content;
+    color: white;
+}
+
+.main {
+    height: 91vh;
 }
 
 .scroll {
@@ -35,7 +61,7 @@ cursor: pointer;
 border-radius: 4px;
 }
 
-.backButton, .printButton:hover {
+.backButton:hover, .printButton:hover {
 background-color: #424343 ;
 color: white;
 }
