@@ -10,4 +10,5 @@ export class ButtonComponent {
   @Input() text: string = 'Default Text';
   @Input() price: number = 0;
   @Input() category: string = '';
+
 }

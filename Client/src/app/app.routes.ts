@@ -5,6 +5,7 @@ import { TussendoortjesComponent } from './tussendoortjes/tussendoortjes.compone
 import { DessertenComponent } from './desserten/desserten.component';
 import { BonComponent } from './bon/bon.component';
 import { LoginComponent } from './login/login.component';
+import { BetaalPaginaComponent } from './betaal-pagina/betaal-pagina.component';
 
 export const routes: Routes = [
   { path: 'drinken', component: DrinkenComponent },
@@ -13,6 +14,7 @@ export const routes: Routes = [
   { path: 'desserten', component: DessertenComponent },
   { path: 'bon', component: BonComponent },
   { path: 'login', component: LoginComponent },
+    { path: 'betaal', component: BetaalPaginaComponent},
   { path: '', redirectTo: '/drinken', pathMatch: 'full' },
   { path: '**', redirectTo: '/drinken', pathMatch: 'full' },
 ];
