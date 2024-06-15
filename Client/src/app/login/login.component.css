@@ -1,53 +1,96 @@
+/* Container voor de gehele pagina */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
 }
 
+/* Formulier container */
 .form {
-  width: 300px;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-}
-
-.form input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
+/* Input velden */
+.form input {
+  width: calc(
+    100% - 22px
+  ); /* Om de padding van 10px en border van 1px te compenseren */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Input velden met fout */
+.form input.input-error {
+  border-color: red;
+}
+
+/* Labels voor de input velden */
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Submit knop */
 .form button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background-color: #4caf50;
   color: white;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
+/* Submit knop hover effect */
 .form button:hover {
   background-color: #45a049;
 }
 
+/* Foutboodschappen */
 .error-message {
   color: red;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 10px;
+  text-align: left;
 }
 
+/* Succesboodschappen */
 .success-message {
   color: green;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 10px;
+  text-align: left;
 }
 
+/* Link styling */
 .link {
   color: blue;
   text-decoration: underline;
   cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* Titel */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
