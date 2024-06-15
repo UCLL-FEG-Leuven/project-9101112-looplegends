@@ -1,14 +1,11 @@
-<h1>Log In pg</h1>
+<h1>Log In</h1>
 <form (submit)="onSubmit(username.value, password.value)">
   <div class="form">
     <label for="user">Username</label>
     <input #username id="user" type="text" [(ngModel)]="username" />
-
     <label for="password">Password</label>
     <input #password id="password" type="password" [(ngModel)]="password" />
-
-    <button type="submit">Submit</button>
-
+    <button mat-raised-button color="primary" type="submit">Submit</button>
     <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
   </div>
 </form>

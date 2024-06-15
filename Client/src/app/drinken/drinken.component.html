@@ -1,7 +1,7 @@
 <header>
   <nav mat-toolbar color="primary" class="nav-bar">
     <div class="Head" fxLayout="row" fxLayoutAlign="start center">
-      <p>EduPay</p>
+      <p>EduPay system</p>
       <app-klok></app-klok>
       <img src="assets/PicKassa.png" alt="PicKassa" />
     </div>
@@ -11,63 +11,138 @@
 <main class="main">
   <div class="Bovenstuk">
     <div class="button-container">
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Cola', 1.5)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Cola', 1.5)"
+      >
         <h4>Cola</h4>
         <p>€1.50</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Fanta', 1.5)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Fanta', 1.5)"
+      >
         <h4>Fanta</h4>
         <p>€1.50</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Sprite', 1.5)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Sprite', 1.5)"
+      >
         <h4>Sprite</h4>
         <p>€1.50</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Water', 1.0)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Water', 1.0)"
+      >
         <h4>Water</h4>
         <p>€1.00</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Koffie', 1.2)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Koffie', 1.2)"
+      >
         <h4>Koffie</h4>
         <p>€1.20</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Thee', 1.2)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Thee', 1.2)"
+      >
         <h4>Thee</h4>
         <p>€1.20</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Cappuccino', 2.0)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Cappuccino', 2.0)"
+      >
         <h4>Cappuccino</h4>
         <p>€2.00</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Espresso', 1.5)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Espresso', 1.5)"
+      >
         <h4>Espresso</h4>
         <p>€1.50</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Latte', 2.5)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Latte', 2.5)"
+      >
         <h4>Latte</h4>
         <p>€2.50</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Chocomelk', 1.5)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Chocomelk', 1.5)"
+      >
         <h4>Chocomelk</h4>
         <p>€1.50</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Jus d\'orange', 2.0)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Jus d\'orange', 2.0)"
+      >
         <h4>Jus d'orange</h4>
         <p>€2.00</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Smoothie', 2.5)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Smoothie', 2.5)"
+      >
         <h4>Smoothie</h4>
         <p>€2.50</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Iced Tea', 1.8)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Iced Tea', 1.8)"
+      >
         <h4>Iced Tea</h4>
         <p>€1.80</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Fristi', 1.5)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Fristi', 1.5)"
+      >
         <h4>Fristi</h4>
         <p>€1.50</p>
       </button>
-      <button mat-raised-button color="secondary" class="Articles" (click)="addToCheckout('Energy Drink', 2.0)">
+      <button
+        mat-raised-button
+        color="secondary"
+        class="Articles"
+        (click)="addToCheckout('Energy Drink', 2.0)"
+      >
         <h4>Energy Drink</h4>
         <p>€2.00</p>
       </button>
@@ -75,27 +150,43 @@
 
     <div>
       <div class="Categorys">
-        <a routerLink="/drinken" routerLinkActive="active"><button mat-raised-button color="primary"
-            class="CategoryButton">
+        <a routerLink="/drinken" routerLinkActive="active"
+          ><button mat-raised-button color="primary" class="CategoryButton">
             Drinken
-          </button></a>
-        <a routerLink="/hoofdgerechten" routerLinkActive="active"><button mat-raised-button color="primary"
-            class="CategoryButton">
+          </button></a
+        >
+        <a routerLink="/hoofdgerechten" routerLinkActive="active"
+          ><button mat-raised-button color="primary" class="CategoryButton">
             Hoofdgerechten
-          </button></a>
-        <a routerLink="/tussendoortjes" routerLinkActive="active"><button mat-raised-button color="primary"
-            class="CategoryButton">
+          </button></a
+        >
+        <a routerLink="/tussendoortjes" routerLinkActive="active"
+          ><button mat-raised-button color="primary" class="CategoryButton">
             Tussendoortjes
-          </button></a>
+          </button></a
+        >
       </div>
     </div>
 
     <div class="Zijbalk">
-      <a routerLink="/login" routerLinkActive="active"><button mat-raised-button color="primary"
-          class="ButtonZijBalk">Admin</button></a>
-      <button mat-raised-button color="primary" class="ButtonZijBalk" (click)="ResetItems()">Reload</button>
-      <a routerLink="/bon" routerLinkActive="active"><button mat-raised-button color="primary"
-          class="ButtonZijBalk">Print bon</button></a>
+      <a routerLink="/login" routerLinkActive="active"
+        ><button mat-raised-button color="primary" class="ButtonZijBalk">
+          Admin
+        </button></a
+      >
+      <button
+        mat-raised-button
+        color="primary"
+        class="ButtonZijBalk"
+        (click)="ResetItems()"
+      >
+        Reload
+      </button>
+      <a routerLink="/bon" routerLinkActive="active"
+        ><button mat-raised-button color="primary" class="ButtonZijBalk">
+          Print bon
+        </button></a
+      >
     </div>
   </div>
 
@@ -115,23 +206,33 @@
         <span class="title">{{ item.title }}</span>
         <span class="price"> €{{ item.price }} </span>
         <span class="total-price">€{{ item.quantity * item.price }}</span>
-        <button class="ButtonAanpassenWinkelmandje" (click)="increaseQuantity(item)">
+        <button
+          class="ButtonAanpassenWinkelmandje"
+          (click)="increaseQuantity(item)"
+        >
           +
         </button>
-        <button class="ButtonAanpassenWinkelmandje" (click)="decreaseQuantity(item)">
+        <button
+          class="ButtonAanpassenWinkelmandje"
+          (click)="decreaseQuantity(item)"
+        >
           -
         </button>
-        <button class="ButtonAanpassenWinkelmandjeDelete" (click)="deleteItem(item)">
+        <button
+          class="ButtonAanpassenWinkelmandjeDelete"
+          (click)="deleteItem(item)"
+        >
           Delete
         </button>
       </div>
     </div>
 
     <div class="Categorys">
-      <a routerLink="/desserten" routerLinkActive="active"><button mat-raised-button color="primary"
-          class="CategoryButton">
+      <a routerLink="/desserten" routerLinkActive="active"
+        ><button mat-raised-button color="primary" class="CategoryButton">
           Desserten
-        </button></a>
+        </button></a
+      >
       <div class="total-cost">
         <p>Totale kosten:</p>
         <p>€{{ totalCost }}</p>
@@ -140,7 +241,7 @@
 
     <div class="Zijbalk">
       <button mat-raised-button color="primary" class="ButtonZijBalk">
-        Lege button
+        Open kassa
       </button>
       <button mat-raised-button color="primary" class="ButtonZijBalk">
         Betaal

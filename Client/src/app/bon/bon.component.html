@@ -1,9 +1,12 @@
-<div class="CheckoutWoorden">
-  <h4 class="CheckoutItemsTitles">Quantity</h4>
-  <h4 class="CheckoutItemsTitles">Title</h4>
-  <h4 class="CheckoutItemsTitles">Price</h4>
-  <h4 class="CheckoutItemsTitles">Total price</h4>
-</div>
+<header>
+  <nav mat-toolbar color="primary" class="nav-bar">
+    <div class="Head" fxLayout="row" fxLayoutAlign="start center">
+      <p>EduPay system</p>
+      <app-klok></app-klok>
+      <img src="assets/PicKassa.png" alt="PicKassa" />
+    </div>
+  </nav>
+</header>
 
 <div class="scroll">
   <div *ngFor="let item of checkoutItems" class="Winkelmandje">
