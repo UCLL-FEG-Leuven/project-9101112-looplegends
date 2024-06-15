@@ -1,8 +1,17 @@
-<div *ngFor="let item of checkoutItems" class="Winkelmandje">
-  <span class="quantity">{{ item.quantity }}X </span>
-  <span class="title">{{ item.title }}</span>
-  <span class="price"> €{{ item.price }} </span>
-  <span class="total-price">€{{ item.quantity * item.price }}</span>
+<div class="CheckoutWoorden">
+  <h4 class="CheckoutItemsTitles">Quantity</h4>
+  <h4 class="CheckoutItemsTitles">Title</h4>
+  <h4 class="CheckoutItemsTitles">Price</h4>
+  <h4 class="CheckoutItemsTitles">Total price</h4>
+</div>
+
+<div class="scroll">
+  <div *ngFor="let item of checkoutItems" class="Winkelmandje">
+    <span class="quantity">{{ item.quantity }}X </span>
+    <span class="price"> €{{ item.price }} </span>
+    <span class="total-price">€{{ item.quantity * item.price }}</span>
+    <span class="title">{{ item.title }}</span>
+  </div>
 </div>
 
 <div class="Categorys">
