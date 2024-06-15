@@ -16,7 +16,6 @@ interface CheckoutItem {
   quantity: number;
   price: number;
 }
-
 @Component({
   selector: 'app-drinken',
   standalone: true,
@@ -89,4 +88,9 @@ export class DrinkenComponent implements OnInit {
     localStorage.clear();
     window.location.reload();
   }
+
 }
+function constructor() {
+  throw new Error('Function not implemented.');
+}
+

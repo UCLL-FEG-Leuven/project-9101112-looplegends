@@ -2,11 +2,15 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router'; // Import Router
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, MatSliderModule, MatIconModule, MatButtonModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })

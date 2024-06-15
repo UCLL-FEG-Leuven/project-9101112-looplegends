@@ -50,8 +50,6 @@
 .form button {
   width: 100%;
   padding: 12px;
-  background-color: #4caf50;
-  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -59,9 +57,9 @@
   transition: background-color 0.3s;
 }
 
-/* Submit knop hover effect */
 .form button:hover {
-  background-color: #45a049;
+  background-color: #424343 ;
+  color: white;;
 }
 
 /* Foutboodschappen */
@@ -80,7 +78,6 @@
   text-align: left;
 }
 
-/* Link styling */
 .link {
   color: blue;
   text-decoration: underline;
@@ -89,8 +86,15 @@
   display: inline-block;
 }
 
-/* Titel */
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  border: 2px solid #185AC3; 
+  border-radius: 10px; 
+  background-color: #185AC3;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  max-width: fit-content;
 }
+
