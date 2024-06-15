@@ -7,6 +7,9 @@ import { TussendoortjesComponent } from '../tussendoortjes/tussendoortjes.compon
 import { DessertenComponent } from '../desserten/desserten.component';
 import { DrinkenComponent } from '../drinken/drinken.component';
 import { CommonModule } from '@angular/common';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 interface CheckoutItem {
@@ -17,7 +20,7 @@ interface CheckoutItem {
 @Component({
   selector: 'app-hoofdgerechten',
   standalone: true,
-  imports: [CommonModule, DrinkenComponent, KlokComponent, ButtonComponent, TussendoortjesComponent, DessertenComponent, RouterOutlet, RouterLink],
+  imports: [CommonModule, DrinkenComponent, KlokComponent, ButtonComponent, TussendoortjesComponent, DessertenComponent, RouterOutlet, RouterLink, MatSliderModule, MatIconModule, MatButtonModule,],
   templateUrl: './hoofdgerechten.component.html',
   styleUrl: './hoofdgerechten.component.css'
 })

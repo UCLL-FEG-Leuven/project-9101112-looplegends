@@ -5,6 +5,7 @@ import { TussendoortjesComponent } from './tussendoortjes/tussendoortjes.compone
 import { DessertenComponent } from './desserten/desserten.component';
 import { BonComponent } from './bon/bon.component';
 
+
 export const routes: Routes = [
   { path: 'drinken', component: DrinkenComponent },
   { path: 'hoofdgerechten', component: HoofdgerechtenComponent },
