@@ -3,6 +3,7 @@ import { NgForOf } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
