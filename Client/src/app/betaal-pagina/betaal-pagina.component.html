@@ -2,10 +2,18 @@
   <h1>Betaalpagina</h1>
   <p>Kies uw betaalmethode:</p>
   <div class="payment-options">
-    <button (click)="OnCash()">Cash</button>
-    <button (click)="OnBancontact()">Bancontact</button>
-    <button (click)="OnStudentenkaart()">Studentenkaart</button>
-    <button (click)="OnPaypal()">PayPal</button>
-    <button (click)="OnPayconic()">Payconic</button>
+    <button mat-raised-button color="primary" (click)="OnCash()">Cash</button>
+    <button mat-raised-button color="primary" (click)="OnBancontact()">
+      Bancontact
+    </button>
+    <button mat-raised-button color="primary" (click)="OnStudentenkaart()">
+      Studentenkaart
+    </button>
+    <button mat-raised-button color="primary" (click)="OnPaypal()">
+      PayPal
+    </button>
+    <button mat-raised-button color="primary" (click)="OnPayconic()">
+      Payconic
+    </button>
   </div>
 </div>

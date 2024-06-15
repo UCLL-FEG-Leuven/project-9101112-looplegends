@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router'; 
+import { Router } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSliderModule } from '@angular/material/slider'; 
 
 
 @Component({
   selector: 'app-betaal-pagina',
   standalone: true,
-  imports: [],
+  imports: [MatIconModule, MatButtonModule, MatSliderModule],
   templateUrl: './betaal-pagina.component.html',
   styleUrl: './betaal-pagina.component.css'
 })
