@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     height: 75px;
+    width: 100%;
+    background-color: #185AC3;
 }
 
 .Head img {
@@ -12,8 +14,15 @@
 }
 
 .Head p {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.1rem;
     margin-left: 1rem;
+    border-radius: 12px;
+    border: 10px solid #c3185a;
+    background-color: #c3185a;
+    padding: 10px;
+    width: 50px;
+    height: 10px;
 }
 
 .main {
@@ -25,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 12vw;
+    width: 10vw;
     height: 17vh;
     margin: 0.2rem;
     font-size: 1.5rem;
@@ -50,15 +59,11 @@ section {
 }
 
 .ButtonZijBalk {
-    width: 12vw;
+    width: 10vw;
     height: 17vh;
     margin: 0.2rem;
-    font-size: 1.5rem;
-    background-color: lightgreen;
+    font-size: 1rem;
     border-radius: 0.5rem;
-
-
-
 }
 
 .Categorys {
@@ -69,11 +74,10 @@ section {
 }
 
 .CategoryButton {
-    width: 12vw;
+    width: 10vw;
     height: 17vh;
     margin: 0.2rem;
-    font-size: 1.5rem;
-    background-color: lightgreen;
+    font-size: 1rem;
     border-radius: 0.5rem;
 }
 
@@ -112,15 +116,14 @@ section {
 
 .Articles {
     font-size: 1.5rem;
-    background-color: lightcyan;
-    width: 217px;
+    width: 200px;
     height: 140px;
     margin: 5px;
     border-radius: 0.5rem;
 }
 
 .Articles h4 {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 
@@ -131,8 +134,6 @@ section {
     margin: 0.3rem;
 
 }
-
-
 
 .Winkelmandje {
     display: grid;
@@ -163,4 +164,28 @@ section {
 .price,
 .total-price {
     font-size: 2rem;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+  }
 }

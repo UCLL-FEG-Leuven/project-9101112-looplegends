@@ -7,6 +7,9 @@ import { TussendoortjesComponent } from '../tussendoortjes/tussendoortjes.compon
 import { DessertenComponent } from '../desserten/desserten.component';
 import { DrinkenComponent } from '../drinken/drinken.component';
 import { CommonModule } from '@angular/common';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { LoginComponent } from '../login/login.component';
 
 interface CheckoutItem {
@@ -26,6 +29,9 @@ interface CheckoutItem {
     DessertenComponent,
     RouterOutlet,
     RouterLink,
+    MatSliderModule,
+    MatIconModule,
+    MatButtonModule,
     LoginComponent,
   ],
   templateUrl: './hoofdgerechten.component.html',

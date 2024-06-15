@@ -8,6 +8,10 @@ import { TussendoortjesComponent } from '../tussendoortjes/tussendoortjes.compon
 import { DrinkenComponent } from '../drinken/drinken.component';
 import { CommonModule } from '@angular/common';
 import { BonComponent } from '../bon/bon.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+
 
 interface CheckoutItem {
   title: string;
@@ -28,6 +32,9 @@ interface CheckoutItem {
     RouterLink,
     CommonModule,
     BonComponent,
+    MatSliderModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   templateUrl: './desserten.component.html',
   styleUrl: './desserten.component.css',

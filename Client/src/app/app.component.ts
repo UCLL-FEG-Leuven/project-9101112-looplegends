@@ -5,6 +5,7 @@ import { KeyboardtestComponent } from './keyboardtest/keyboardtest.component';
 import { BonComponent } from './bon/bon.component';
 import { LoginComponent } from './login/login.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -19,3 +20,4 @@ import { LoginComponent } from './login/login.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {}
+

@@ -7,6 +7,9 @@ import { ButtonComponent } from '../button/button.component';
 import { DessertenComponent } from '../desserten/desserten.component';
 import { DrinkenComponent } from '../drinken/drinken.component';
 import { HoofdgerechtenComponent } from '../hoofdgerechten/hoofdgerechten.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 interface CheckoutItem {
@@ -18,7 +21,7 @@ interface CheckoutItem {
 @Component({
   selector: 'app-tussendoortjes',
   standalone: true,
-  imports: [CommonModule, DrinkenComponent, KlokComponent, ButtonComponent, HoofdgerechtenComponent, DessertenComponent, RouterOutlet, RouterLink],
+  imports: [CommonModule, DrinkenComponent, KlokComponent, ButtonComponent, HoofdgerechtenComponent, DessertenComponent, RouterOutlet, RouterLink, MatSliderModule, MatIconModule, MatButtonModule,],
   templateUrl: './tussendoortjes.component.html',
   styleUrl: './tussendoortjes.component.css'
 })

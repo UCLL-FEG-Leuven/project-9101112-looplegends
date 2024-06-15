@@ -6,6 +6,7 @@ import { DessertenComponent } from './desserten/desserten.component';
 import { BonComponent } from './bon/bon.component';
 import { LoginComponent } from './login/login.component';
 
+
 export const routes: Routes = [
   { path: 'drinken', component: DrinkenComponent },
   { path: 'hoofdgerechten', component: HoofdgerechtenComponent },

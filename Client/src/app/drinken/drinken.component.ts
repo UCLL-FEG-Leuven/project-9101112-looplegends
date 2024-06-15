@@ -7,7 +7,9 @@ import { HoofdgerechtenComponent } from '../hoofdgerechten/hoofdgerechten.compon
 import { TussendoortjesComponent } from '../tussendoortjes/tussendoortjes.component';
 import { DessertenComponent } from '../desserten/desserten.component';
 import { CommonModule } from '@angular/common';
-
+import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 interface CheckoutItem {
   title: string;
@@ -18,7 +20,7 @@ interface CheckoutItem {
 @Component({
   selector: 'app-drinken',
   standalone: true,
-  imports: [KlokComponent, ButtonComponent, HoofdgerechtenComponent, TussendoortjesComponent, DessertenComponent, RouterOutlet, RouterLink, CommonModule],
+  imports: [KlokComponent, ButtonComponent, HoofdgerechtenComponent, TussendoortjesComponent, DessertenComponent, RouterOutlet, RouterLink, CommonModule, MatSliderModule, MatIconModule, MatButtonModule,],
   templateUrl: './drinken.component.html',
   styleUrl: './drinken.component.css'
 })
@@ -87,10 +89,4 @@ export class DrinkenComponent implements OnInit {
     localStorage.clear();
     window.location.reload();
   }
-
-
-
-
-
-
 }
