@@ -1,0 +1,11 @@
+<h1>Log In pg</h1>
+<form action="">
+  <label for="user"></label>
+  <input #username id="user" type="text" />
+  <label for="Password"></label>
+  <input #password id="password" type="assword" />
+  <button
+    type="submit"
+    (click)="onSubmit(password.value, username.value)"
+  ></button>
+</form>
