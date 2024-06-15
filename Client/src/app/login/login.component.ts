@@ -1,16 +1,23 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router'; // Import Router
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-
+import { KeyboardtestComponent } from '../keyboardtest/keyboardtest.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule, MatSliderModule, MatIconModule, MatButtonModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSliderModule,
+    KeyboardtestComponent,
+  ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
@@ -21,14 +28,22 @@ export class LoginComponent {
   password: string = '';
   errorMessage: string = '';
 
-  constructor(private router: Router) {}
+  @ViewChild('usernameInput') usernameInput: ElementRef | undefined;
+  @ViewChild('passwordInput') passwordInput: ElementRef | undefined;
 
+  constructor(private router: Router) {}
+  ngAfterViewInit() {
+    if (this.usernameInput) {
+      this.usernameInput.nativeElement.focus();
+    }
+  }
   onSubmit(username: string, password: string) {
     this.errorMessage = '';
     if (
       username === this.correctUserName &&
       password === this.correctPassword
     ) {
+      console.log('correct');
       this.router.navigate(['/home']);
     } else {
       if (username !== this.correctUserName) {
@@ -37,5 +52,12 @@ export class LoginComponent {
         this.errorMessage = 'Wrong password';
       }
     }
+  }
+  onLetterPressed(letter: string) {
+    this.username += letter;
+  }
+
+  onNumberPressed(number: number) {
+    this.password += number.toString();
   }
 }

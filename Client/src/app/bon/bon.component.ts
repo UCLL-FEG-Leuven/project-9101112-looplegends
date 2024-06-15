@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { KlokComponent } from '../klok/klok.component';
+
 
 
 
@@ -16,7 +18,7 @@ interface CheckoutItem {
 @Component({
   selector: 'app-bon',
   standalone: true,
-  imports: [NgForOf, RouterModule, MatSliderModule, MatIconModule, MatButtonModule],
+  imports: [NgForOf, RouterModule, MatSliderModule, MatIconModule, MatButtonModule, KlokComponent],
   templateUrl: './bon.component.html',
   styleUrls: ['./bon.component.css'],
 })
