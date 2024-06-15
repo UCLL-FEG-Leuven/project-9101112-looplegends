@@ -34,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 10vw;
+    width: 11vw;
     height: 17vh;
     margin: 0.2rem;
     font-size: 1.5rem;
@@ -59,7 +59,7 @@ section {
 }
 
 .ButtonZijBalk {
-    width: 10vw;
+    width: 11vw;
     height: 17vh;
     margin: 0.2rem;
     font-size: 1rem;
@@ -74,7 +74,7 @@ section {
 }
 
 .CategoryButton {
-    width: 10vw;
+    width: 11vw;
     height: 17vh;
     margin: 0.2rem;
     font-size: 1rem;
@@ -111,9 +111,6 @@ section {
     font-size: 1.8rem;
 }
 
-
-
-
 .Articles {
     font-size: 1.5rem;
     width: 200px;
@@ -125,8 +122,6 @@ section {
 .Articles h4 {
     font-size: 1rem;
 }
-
-
 
 .CheckoutItemsTitles {
     font-size: 1.3rem;
@@ -167,25 +162,80 @@ section {
 }
 
 @media only screen and (min-width: 992px) {
-  body {
-    font-size: 16px;
-    width: 80%;
-    margin: auto;
-  }
+    body {
+        font-size: 12px;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1344px) {
+    body {
+        font-size: 10px;
+        width: 80%;
+        margin: auto;
+    
+    }
+    .ButtonZijBalk, .CategoryButton, .Articles {
+    width: 10vw;
+    height: 15vh;
+    margin: 0.2rem;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    }
+    .total-cost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 15vh;
+    margin: 0.2rem;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    }
+    .ButtonAanpassenWinkelmandjeDelete {
+    border: 0.8px solid black;
+    border-radius: 2rem;
+    width: 5vw;
+    height: 5vh;
+    font-size: 1.1rem;
+    }
+    .ButtonAanpassenWinkelmandje {
+    border: 0.8px solid black;
+    border-radius: 2rem;
+    width: 5vw;
+    height: 5vh;
+    font-size: 1.1rem;
+    }
+
+    .Winkelmandje {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 8% 8% 10%;
+    align-items: center;
+    justify-items: center;
+    border: 3px solid black;
+    min-height: 10vh;
+    font-size: 1.5rem;
+    }
+    .Winkelmandje .title, .quantity, .price, .total-price {
+    font-size: 1.2rem;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 14px;
-    width: 90%;
-    margin: auto;
-  }
+    body {
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 767px) {
-  body {
-    font-size: 12px;
-    width: 100%;
-    margin: 0;
-  }
+    body {
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
+    }
 }
