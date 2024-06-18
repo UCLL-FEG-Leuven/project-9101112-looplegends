@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: 'desserten', component: DessertenComponent },
   { path: 'bon', component: BonComponent },
   { path: 'login', component: LoginComponent },
-    { path: 'betaal', component: BetaalPaginaComponent},
+  { path: 'betaal', component: BetaalPaginaComponent},
   { path: '', redirectTo: '/drinken', pathMatch: 'full' },
   { path: '**', redirectTo: '/drinken', pathMatch: 'full' },
 ];

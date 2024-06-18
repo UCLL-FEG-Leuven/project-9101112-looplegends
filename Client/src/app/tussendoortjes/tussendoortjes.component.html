@@ -1,7 +1,7 @@
 <header>
   <nav>
     <div class="Head">
-      <p>EduPay</p>
+      <p>EduPay system</p>
       <app-klok></app-klok>
       <img src="assets/PicKassa.png" alt="PicKassa" />
     </div>
@@ -229,7 +229,9 @@
         <button
           class="ButtonAanpassenWinkelmandje"
           (click)="decreaseQuantity(item)"
-        ></button>
+        >
+          -
+        </button>
         <button
           class="ButtonAanpassenWinkelmandjeDelete"
           (click)="deleteItem(item)"
@@ -252,14 +254,8 @@
     </div>
 
     <div class="Zijbalk">
-      <button
-        mat-raised-button
-        color="primary"
-        mat-raised-button
-        color="primary"
-        class="ButtonZijBalk"
-      >
-        Lege button
+      <button mat-raised-button color="primary" class="ButtonZijBalk">
+        Open kassa
       </button>
       <a routerLink="/betaal" routerLinkActive="active"
         ><button mat-raised-button color="primary" class="ButtonZijBalk">
