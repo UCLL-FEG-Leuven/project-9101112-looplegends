@@ -5,6 +5,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { KlokComponent } from '../klok/klok.component';
+import { Router } from '@angular/router';
 
 interface CheckoutItem {
   title: string;
@@ -30,7 +31,7 @@ export class BonComponent implements OnInit {
   checkoutItems: CheckoutItem[] = [];
   totalCost: number = 0;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     const savedItems = localStorage.getItem('checkoutItems');
@@ -46,5 +47,12 @@ export class BonComponent implements OnInit {
       0
     );
     this.totalCost = parseFloat(total.toFixed(2));
+  }
+
+  OnPrint() {
+    alert('Printing bon');
+    setTimeout(() => {
+      this.router.navigate(['/drinken']);
+    }, 1000);
   }
 }
