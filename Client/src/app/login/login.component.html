@@ -2,9 +2,21 @@
 <form (submit)="onSubmit(username.value, password.value)">
   <div class="form">
     <label for="user">Username</label>
-    <input #username id="user" type="text" [(ngModel)]="username" />
+    <input
+      #username
+      id="user"
+      type="text"
+      [(ngModel)]="username"
+      placeholder="..."
+    />
     <label for="password">Password</label>
-    <input #password id="password" type="password" [(ngModel)]="password" />
+    <input
+      #password
+      id="password"
+      type="password"
+      [(ngModel)]="password"
+      placeholder="..."
+    />
     <button mat-raised-button color="primary" type="submit">Login</button>
     <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
   </div>
